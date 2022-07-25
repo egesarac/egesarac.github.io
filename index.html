@@ -1,0 +1,169 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> N. Ege Saraç | Home </title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<!---start-wrap--->
+		<!---start-header--->
+	<div class="header">
+		<div class="wrap">
+			<!---start-logo--->
+			<div class="logo">
+				<a href="#">N. Ege Saraç</a>
+			</div>
+			<!---End-logo--->
+			<!---start-top-nav--->
+			<div class="top-nav">
+				<ul>
+					<li><a href="#aboutme" class="scroll">About me</a></li>
+                    <li><a href="#research" class="scroll">Research</a></li>
+					<li><a href="#publications" class="scroll">Publications</a></li>
+				</ul>
+			</div>
+			<div class="clear"> </div>
+			<!---End-top-nav--->
+	     </div>
+	</div>
+		<!---End-wrap--->
+	<div class="content">
+
+        <div class="row">
+            <div class="grid1_35" id="aboutme">
+                <br />
+                <br />
+                <img src="images/pp.png"/>
+                <h3>N. Ege Saraç</h3>
+                <p>PhD Candidate in Computer Science</p>
+                <p><a href="https://ista.ac.at/"> Institute of Science and Technology Austria (ISTA) </a></p>
+                <p>Am Campus 1, 3400 Klosterneuburg, Austria</p>
+                <p>ege.sarac@ist.ac.at</p>
+            </div>
+
+
+            <div class="grid1_65" id="aboutme">
+                <br />
+                <br />
+                <h4>About me</h4>
+                <p>I am a PhD candidate in computer science at the Institute of Science and Technology Austria (ISTA), where I am supervised by<a href="https://pub.ist.ac.at/~tah/">Tom Henzinger</a>. </p>
+                <br />
+                <p>My research aims to establish a framework for online and best-effort monitoring for quantitative specifications, highlighting various tradeoffs in monitor design.</p>
+                
+                <br />
+                <div class="row">
+                    <div class="grid1_35" id="aboutme">
+                        <h4>Research interests</h4>
+                        <ol>
+                            <ul style="list-style-type:circle"></ul>
+                            <li><p>Runtime verification</p></li>
+                            <li><p>Formal methods</p></li>
+                            <li><p>Automata theory</p></li>
+                        </ol>
+                    </div>
+
+                    <div class="grid1_65a" id="aboutme">
+                        <h4>Education</h4>
+                        <ol>
+                            <li><p>PhD in Computer Science, <i>ongoing</i></p> <h6>Institute of Science and Technology Austria (ISTA)</h6></li> <br />
+                            <li><p>BSc in Computer Science, <i>2019</i></p> <h6>Sabanci University</h6></li>
+                        </ol>
+                        
+                        
+                    </div>
+                </div>
+
+                <br />
+                <h5><a href="files/cv_egesarac.pdf"> [CV] </a> &nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=5oDTOfUAAAAJ&hl=en"> [Google Scholar] </a> &nbsp;&nbsp;&nbsp; <a href="https://dblp.org/pid/222/1242.html"> [DBLP] </a></h5>
+                
+            </div>
+          </div>
+
+          <div class="grid2" id="research">
+			<h3>Research</h3>
+
+			<p>
+                Runtime verification (RV) is a lightweight, dynamic technique where a monitor watches a trace of a system
+                and, if possible, decides after observing each finite prefix whether or not the unknown infinite trace satisfies
+                a given specification.
+                Theoretically, RV moves the burden from emptiness checking in static verification
+                to membership checking, an easier problem.
+                This shift introduces the opportunity to use more powerful
+                formalisms.
+            </p>
+            <p>
+                My research focuses on abstractions that enable reasoning about quantitative information
+                and moving RV to a quantitative setting. Such a setting is attractive because quantitative verdicts can
+                be approximate and thus compared regarding their precision. I aim to develop a framework for online
+                and best-effort quantitative monitoring that subsumes <b>a cost-centric theory of monitorability</b> and <b>a
+                    precision-cost theory of approximate monitoring</b>. Moreover, I aim to extend the framework to monitors
+                that take corrective action and decentralized monitoring.
+            </p>
+
+            <p>[<a href="files/proposal21.pdf">my PhD research proposal</a>]</p>
+		</div>
+
+	    <div class="grid4" id="publications" background=#90adde>
+            
+            <h3>Publications</h3>
+
+        <ul>
+			<li>
+	  			<b>Abstract Monitors for Quantitative Specifications</b>
+                [<a href="">coming soon</a>]</br>
+	  			Joint work with Thomas A. Henzinger and Nicolas Mazzocchi</br>
+	  			<i>International Conference on Runtime Verification (RV) 2022</i></br>
+			</li>
+			</br>
+            <li>
+				<b>Quantitative and Approximate Monitorability</b>
+                [<a href="files/lics21.pdf">pdf</a>]</br>
+				Joint work with Thomas A. Henzinger</br>
+				<i>Symposium on Logic in Computer Science (LICS) 2021</i></br>
+			</li> 
+            </br>
+			<li>
+				<b>Boosting Expensive Synchronizing Heuristics</b>
+                [<a href="files/eswa21.pdf">pdf</a>]</br>
+				Joint work with Ömer Faruk Altun, Kamil Tolga Atam, Sertaç Karahoda, Kamer Kaya, and Hüsnü Yenigün</br>
+				<i>Expert Systems with Applications, Volume 167, 2021</i></br>
+			</li>
+			</br>
+			<li>
+				<b>Monitorability Under Assumptions</b>
+                [<a href="files/rv20.pdf">pdf</a>]</br>
+				Joint work with Thomas A. Henzinger</br>
+				<i>International Conference on Runtime Verification (RV) 2020</i></br>
+			</li>
+			</br>
+			<li>
+				<b>A Theory of Register Monitors</b>
+                [<a href="files/lics18.pdf">pdf</a>]</br>
+				Joint work with Thomas Ferrère and Thomas A. Henzinger</br>
+				<i>Symposium on Logic in Computer Science (LICS) 2018</i></br>
+			</li>
+		</ul>
+		</div>
+
+		<div class="footer">
+			<p>Last update: July 2022</p>
+		</div>
+	</div>
+	</body>
+</html>
