@@ -313,7 +313,7 @@ img{max-width:100%;}
 }
 .grid2 p{
 	font-family: 'gandhi_sansregular';
-    text-align: center;
+    text-align: justify;
 	color: #2A323A;
 	font-size: 1.4em;
 	line-height: 1.5em;
@@ -339,11 +339,11 @@ img{max-width:100%;}
 	font-size: 1.6em;
 	padding: 1% 10% 1% 10%;
 }
-.grid2 video{
-    width: 75%;
-    max-width: 720px;
+.grid2 h5{
+	font-family: 'gandhi_sansregular';
+	color: #28303e;
+	font-size: 1.3em;
 }
-
 
 /*----grid3-----*/
 .grid3{
