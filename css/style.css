@@ -243,6 +243,7 @@ img{max-width:100%;}
 	line-height: 1.5em;
 	padding: 2% 10% 0% 10%;
 }
+
 .grid2{
 	text-align:center;
 	padding: 50px 0px;
@@ -510,6 +511,67 @@ img{max-width:100%;}
 	font-family: 'gandhi_sansregular';
 	color: #28303e;
 	font-size: 0.9em;
+}
+
+.links1 {
+	background:#F5FAFA;
+	text-align:center;
+}
+
+.links1 p a,.links1 p{
+	font-family: 'gandhi_sansregular';
+	color: #FFF;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+.links1 p{
+	width: 57%;
+    color: #28303e;
+	margin:0 auto;
+}
+
+.links1 p a{
+	font-size: 1em;
+	padding-left: 0px;
+	color:#415792;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+.links1 p a:hover{
+	color:rgb(176, 169, 236);
+}
+
+
+
+
+.links2 {
+	text-align:center;
+	padding: 0% 0% 2% 0%;
+}
+
+.links2 p a,.links2 p{
+	font-family: 'gandhi_sansregular';
+	color: #FFF;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+.links2 p{
+	width: 57%;
+    color: #28303e;
+	margin:0 auto;
+}
+
+.links2 p a{
+	font-size: 1em;
+	padding-left: 0px;
+	color:#415792;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+.links2 p a:hover{
+	color:rgb(176, 169, 236);
 }
 
 /*----responsive design----*/
