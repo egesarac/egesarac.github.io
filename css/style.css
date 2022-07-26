@@ -233,7 +233,7 @@ img{max-width:100%;}
 	font-family: 'gandhi_sansregular';
 	color: #2A323A;
 	font-size: 2.2em;
-	padding: 3% 0% 0% 0%;
+	padding: 2% 0% 0% 0%;
 }
 .grid2 p{
 	font-family: 'gandhi_sansregular';
@@ -272,7 +272,7 @@ img{max-width:100%;}
 
 /*----grid3-----*/
 .grid3{
-	background:#90adde;
+	background:#bccbe4;
 	padding: 50px 0px;
 }
 .grid3{
@@ -280,11 +280,19 @@ img{max-width:100%;}
 	width: 100%;
 	margin: 0 auto;
 }
+.grid3 p{
+	font-family: 'gandhi_sansregular';
+    text-align: justify;
+	color: #2A323A;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	padding: 0% 10% 0% 10%;
+}
 .grid3 h3{
 	font-family: 'gandhi_sansregular';
 	color: #2A323A;
 	font-size: 2.3em;
-	padding: 3% 0% 0% 0%;
+	padding: 2% 0% 1% 0%;
 }
 .grid3 h4{
 	font-family: 'gandhi_sansregular';
@@ -333,7 +341,7 @@ img{max-width:100%;}
 	font-family: 'gandhi_sansregular';
 	color: #2A323A;
 	font-size: 2.3em;
-	padding: 3% 0% 0% 0%;
+	padding: 2% 0% 0% 0%;
 }
 .grid4 h4{
 	font-family: 'gandhi_sansregular';
