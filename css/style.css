@@ -129,9 +129,8 @@ img{max-width:100%;}
 	-webkit-transition: 0.5s ease;
 }
 .grid1_35 p a:hover{
-	color:#FFF;
+	color:rgb(182, 154, 235);
 }
-
 
 
 .grid1_65{
@@ -191,7 +190,7 @@ img{max-width:100%;}
 	-webkit-transition: 0.5s ease;
 }
 .grid1_65 p a:hover{
-	color:rgb(176, 169, 236);
+	color:rgb(182, 154, 235);
 }
 
 
@@ -318,7 +317,7 @@ img{max-width:100%;}
 	-webkit-transition: 0.5s ease;
 }
 .grid3 li a:hover{
-	color:#FFF;
+	color:rgb(182, 154, 235);
 }
 .grid3 img{
 	background:#fff;
@@ -547,7 +546,7 @@ img{max-width:100%;}
 	-webkit-transition: 0.5s ease;
 }
 .links1 p a:hover{
-	color:rgb(176, 169, 236);
+	color:rgb(182, 154, 235);
 }
 
 
@@ -579,7 +578,7 @@ img{max-width:100%;}
 	-webkit-transition: 0.5s ease;
 }
 .links2 p a:hover{
-	color:rgb(176, 169, 236);
+	color:rgb(182, 154, 235);
 }
 
 /*----responsive design----*/
