@@ -349,6 +349,13 @@ img{max-width:100%;}
 	font-size: 1.6em;
 	padding: 1% 10% 1% 10%;
 }
+.grid4 p{
+	font-family: 'gandhi_sansregular';
+	text-align: left;
+    color: #2A323A;
+	font-size: 0ç8em;
+	padding: 1% 10% 1% 10%;
+}
 .grid4 li{
 	font-family: 'gandhi_sansregular';
     text-align: left;
