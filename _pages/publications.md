@@ -13,7 +13,7 @@ Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Runtime Verification (RV) 2022*
 
-**Quantitative and Approximate Monitorability** [[pdf]](https://egesarac.github.io/files/lics21.pdf)\
+**Quantitative and Approximate Monitoring** [[pdf]](https://egesarac.github.io/files/lics21.pdf)\
 Thomas A. Henzinger, N. Ege Saraç\*\
 *Symposium on Logic in Computer Science (LICS) 2021*
 
