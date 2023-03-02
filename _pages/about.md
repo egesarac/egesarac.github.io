@@ -22,7 +22,7 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 News
 ======
-<font color="gray">Mar '23.</font> I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi!
-<font color="gray">Dec '22.</font> Our paper *Quantitative Safey and Liveness* is accepted for publication at FoSSaCS 2023.
-<font color="gray">Jul '22.</font> I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!
-<font color="gray">Jun '22.</font> Our paper *Abstract Monitors for Quantitative Specifications* is accepted for publication at RV 2022.
+<font color="gray">Mar '23. </font>I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi!
+<font color="gray">Dec '22. </font>Our paper *Quantitative Safey and Liveness* is accepted for publication at FoSSaCS 2023.
+<font color="gray">Jul '22. </font>I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!
+<font color="gray">Jun '22. </font>Our paper *Abstract Monitors for Quantitative Specifications* is accepted for publication at RV 2022.
