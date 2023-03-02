@@ -5,9 +5,9 @@ permalink: /talks/
 author_profile: true
 ---
 
-**Advancing the Theory of Quantitative Algorithmic Monitoring**\
-FBK Embedded Systems Seminar Series (Sep '22)\
-It-Matters Seminar Series (Apr '22)
+Sep '22, *Advancing the Theory of Quantitative Algorithmic Monitoring*, [FBK Embedded Systems Seminar Series](https://es.fbk.eu/)
+
+[It-Matters Seminar Series](http://itmatters.imtlucca.it/) (Apr '22)
 
 **Quantitative and Approximate Monitoring**\
 ISTA & TU Wien FORSYTE Joint Seminar Series (Jun '21)
