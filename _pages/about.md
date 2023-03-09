@@ -24,7 +24,7 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 <span style="color:gray">Mar '23.</span> I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi!
 
-<span style="color:gray">Dec '22.</span> Our paper *Quantitative Safey and Liveness* is accepted for publication at FoSSaCS 2023.
+<span style="color:gray">Dec '22.</span> Our paper *Quantitative Safety and Liveness* is accepted for publication at FoSSaCS 2023.
 
 <span style="color:gray">Jul '22.</span> I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!
 
