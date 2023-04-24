@@ -6,21 +6,17 @@ author_profile: true
 ---
 
 **Foundation of Model Checking** (2023)\
-Co-instructor\
-Graduate level\
+Guest lecturer (graduate level)\
 *Institute of Science and Technology Austria*
 
 **Formal Methods: Algorithmic Approaches** (2022)\
-Teaching assistant\
-Graduate level\
+Teaching assistant (graduate level)\
 *Institute of Science and Technology Austria*
 
 **Algorithms** (2018 - 2019)\
-Teaching assistant\
-Undergraduate level\
+Teaching assistant (undergraduate level)\
 *Sabancı University*
 
 **Mathematics & Natural Sciences** (2015 - 2018)\
-Peer study and workshop moderator\
-Undergraduate level\
+Peer study and workshop moderator (undergraduate level)\
 *Sabancı University*

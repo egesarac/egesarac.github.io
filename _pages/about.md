@@ -22,6 +22,8 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 # News
 
+<span style="color:gray">Apr '23.</span> Our paper *Regular Methods for Operator Precedence Languages* is accepted for publication at ICALP 2023.
+
 <span style="color:gray">Mar '23.</span> I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi!
 
 <span style="color:gray">Dec '22.</span> Our paper *Quantitative Safety and Liveness* is accepted for publication at FoSSaCS 2023.

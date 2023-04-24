@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Regular Methods for Operator Precedence Languages** [[pdf]](https://egesarac.github.io/files/icalp23.pdf)\
+Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Colloquium on Automata, Languages and Programming (ICALP) 2023*
+
 **Quantitative Safety and Liveness** [[pdf]](https://egesarac.github.io/files/fossacs23.pdf)\
 Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Foundations of Software Science and Computation Structures (FoSSaCS) 2023*
