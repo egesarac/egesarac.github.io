@@ -6,9 +6,9 @@ author_profile: true
 ---
 
 **Reviewer**\
-Conferences: ATVA 2023, CONCUR 2023\
-Journals: Innovations in Systems and Software Engineering\
-Other: Principles of Systems Design (Tom Henzinger Festschrift)
+<span style="color:gray">Conferences:</span> ATVA 2023, CONCUR 2023\
+<span style="color:gray">Journals:</span> Innovations in Systems and Software Engineering\
+<span style="color:gray">Other:</span>  Principles of Systems Design (Tom Henzinger Festschrift)
 
 **Pre-screener** (2023)\
 for PhD applications at the *Institute of Science and Technology Austria*
