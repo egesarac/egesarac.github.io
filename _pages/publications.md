@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Safety and Liveness of Quantitative Automata** [[pdf]](https://egesarac.github.io/files/concur23.pdf)\
+Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Conference on Concurrency Theory (CONCUR) 2023*
+
 **Regular Methods for Operator Precedence Languages** [[pdf]](https://egesarac.github.io/files/icalp23.pdf)\
 Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Colloquium on Automata, Languages and Programming (ICALP) 2023*

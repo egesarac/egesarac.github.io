@@ -22,6 +22,8 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 # News
 
+<span style="color:gray">Jul '23.</span> I will spend the next three months at the Austrian Institute of Technology (AIT) as an intern, working on distributed monitoring under Dejan Ničković. Looking forward to it!
+
 <span style="color:gray">Jun '23.</span> Our paper *Safety and Liveness of Quantitative Automata* is accepted for publication at CONCUR 2023.
 
 <span style="color:gray">Apr '23.</span> Our paper *Regular Methods for Operator Precedence Languages* is accepted for publication at ICALP 2023.
