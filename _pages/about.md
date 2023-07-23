@@ -36,8 +36,9 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 <summary>Show more</summary>
 
 <span style="color:gray">Jul '22.</span> I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!
-
+<br><br>
 <span style="color:gray">Jun '22.</span> Our paper *Abstract Monitors for Quantitative Specifications* is accepted for publication at RV 2022.
+<br><br>
 </details>
 
 <!--<span style="color:gray">Jul '22.</span> I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!-->
