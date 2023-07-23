@@ -10,7 +10,7 @@ redirect_from:
 
 I am a PhD candidate in computer science at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/), where I am supervised by [Tom Henzinger](https://pub.ist.ac.at/~tah/).
 
-My research aims to establish a framework for online and best-effort monitoring for quantitative specifications, highlighting various tradeoffs in monitor design. My research interests also include runtime verification, formal methods, and automata theory.
+My research aims to establish a framework for online and best-effort monitoring for quantitative specifications, highlighting various tradeoffs in monitor design. I am also interested in runtime verification and formal methods in general, with a soft spot for automata theory.
 
 # Research
 
