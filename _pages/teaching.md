@@ -5,7 +5,10 @@ permalink: /teaching/
 author_profile: true
 ---
 
-**Foundation of Model Checking** (2023)\
+**Formalisms Every Computer Scientist Should Know** (2023-2024)\
+Teaching assistant at the *Institute of Science and Technology Austria*
+
+**Foundations of Model Checking** (2023)\
 Guest lecturer at the *Institute of Science and Technology Austria*
 
 **Formal Methods: Algorithmic Approaches** (2022)\
