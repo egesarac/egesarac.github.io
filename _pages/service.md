@@ -13,7 +13,7 @@ author_profile: true
 **Pre-screener** (2023)\
 for PhD applications at the *Institute of Science and Technology Austria*
 
-**Student buddy** (2020)\
+**Student buddy** (2020, 2023)\
 for incoming PhD students at the *Institute of Science and Technology Austria*
 
 **Publication database maintainer** (2020 - now)\
