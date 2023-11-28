@@ -5,7 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
-**Formalisms Every Computer Scientist Should Know** (2023-2024)\
+**Formalisms Every Computer Scientist Should Know** (2023 - 2024)\
 Teaching assistant at the *Institute of Science and Technology Austria*
 
 **Foundations of Model Checking** (2023)\
