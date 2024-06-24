@@ -22,15 +22,19 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 # News
 
+<span style="color:gray">Jun '24.</span> I am visiting the [DEVINE team](https://devine.inria.fr/) to talk about our work on the safety and liveness of quantitative properties and automata. Many thanks to [Ocan Sankur](https://people.irisa.fr/Ocan.Sankur/) for the invitation!
+
+<span style="color:gray">Jun '24.</span> Our paper *Strategic Dominance: A New Preorder for Nondeterministic Processes* is accepted for publication at CONCUR 2024.
+
 <span style="color:gray">Jul '23.</span> I will spend the next three months at the [Austrian Institute of Technology (AIT)](https://www.ait.ac.at/en/) as an intern, working on distributed monitoring under [Dejan Ničković](https://sites.google.com/view/nickovic). Looking forward to it!
 
 <span style="color:gray">Jun '23.</span> Our paper *Safety and Liveness of Quantitative Automata* is accepted for publication at CONCUR 2023.
 
 <span style="color:gray">Apr '23.</span> Our paper *Regular Methods for Operator Precedence Languages* is accepted for publication at ICALP 2023.
 
-<span style="color:gray">Mar '23.</span> I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi!
+<!-- <span style="color:gray">Mar '23.</span> I will be attending ETAPS 2023 to present our work at FoSSaCS. Come say hi! -->
 
-<span style="color:gray">Dec '22.</span> Our paper *Quantitative Safety and Liveness* is accepted for publication at FoSSaCS 2023.
+<!-- <span style="color:gray">Dec '22.</span> Our paper *Quantitative Safety and Liveness* is accepted for publication at FoSSaCS 2023. -->
 
 <!--<span style="color:gray">Jul '22.</span> I am looking for an internship opportunity for Summer 2023. If you’d like to get in touch, please don't hesitate to email me!-->
 

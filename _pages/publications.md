@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Strategic Dominance: A New Preorder for Nondeterministic Processes** [[pdf]](https://egesarac.github.io/files/concur24.pdf)\
+Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Conference on Concurrency Theory (CONCUR) 2024*
+
 **Safety and Liveness of Quantitative Automata** [[pdf]](https://egesarac.github.io/files/concur23.pdf)\
 Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Concurrency Theory (CONCUR) 2023*
