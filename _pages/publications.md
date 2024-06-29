@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy** [[pdf]](https://egesarac.github.io/files/rv24.pdf)\
+Borzoo Bonakdarpour, Anik Momtaz, Dejan Ničković and N. Ege Saraç\*\
+*International Conference on Runtime Verification (RV) 2024*
+
 **Strategic Dominance: A New Preorder for Nondeterministic Processes** [[pdf]](https://egesarac.github.io/files/concur24.pdf)\
 Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Concurrency Theory (CONCUR) 2024*
