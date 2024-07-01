@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 **Safety and Liveness of Quantitative Properties and Automata**\
+[DEVINE Research Team (Inria and IRISA)](https://devine.inria.fr/) Formal Methods Seminar (Jun '24)
 [AIT Dependable Systems Engineering](https://www.ait.ac.at/en/research-topics/dependable-systems-engineering) Seminar Series (Oct '23)
 
 **Advancing the Theory of Quantitative Algorithmic Monitoring**\
