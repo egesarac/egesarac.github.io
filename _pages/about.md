@@ -22,6 +22,8 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 # News
 
+<span style="color:gray">Sep '24.</span> I am attending [AVM 2024](https://avm2024.informatik.uni-freiburg.de/) to present our work on the safety and liveness of quantitative properties and automata. Come say hi!
+
 <span style="color:gray">Jun '24.</span> Our paper *Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy* is accepted for publication at RV 2024.
 
 <span style="color:gray">Jun '24.</span> I am visiting the [DEVINE team](https://devine.inria.fr/) to talk about our work on the safety and liveness of quantitative properties and automata. Many thanks to [Ocan Sankur](https://people.irisa.fr/Ocan.Sankur/) for the invitation!
@@ -30,7 +32,7 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 <span style="color:gray">Jul '23.</span> I will spend the next three months at the [Austrian Institute of Technology (AIT)](https://www.ait.ac.at/en/) as an intern, working on distributed monitoring under [Dejan Ničković](https://sites.google.com/view/nickovic). Looking forward to it!
 
-<span style="color:gray">Jun '23.</span> Our paper *Safety and Liveness of Quantitative Automata* is accepted for publication at CONCUR 2023.
+<!-- <span style="color:gray">Jun '23.</span> Our paper *Safety and Liveness of Quantitative Automata* is accepted for publication at CONCUR 2023. -->
 
 <!-- <span style="color:gray">Apr '23.</span> Our paper *Regular Methods for Operator Precedence Languages* is accepted for publication at ICALP 2023. -->
 
