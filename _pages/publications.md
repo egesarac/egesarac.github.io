@@ -5,7 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-**Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy** [[pdf]](https://egesarac.github.io/files/rv24.pdf)\
+**QuAK: Quantitative Automata Kit** (invited paper) [[pdf]](https://egesarac.github.io/files/isola24.pdf) [[code]](https://github.com/ista-vamos/QuAK)\
+Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Symposium On Leveraging Applications of Formal Methods (ISoLA) 2024*
+
+**Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy** [[pdf]](https://egesarac.github.io/files/rv24.pdf) [[code]](https://github.com/egesarac/ApxDistMon)\
 Borzoo Bonakdarpour, Anik Momtaz, Dejan Ničković, N. Ege Saraç\*\
 *International Conference on Runtime Verification (RV) 2024*
 
@@ -33,11 +37,11 @@ Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 Thomas A. Henzinger, N. Ege Saraç\*\
 *Symposium on Logic in Computer Science (LICS) 2021*
 
-**Boosting Expensive Synchronizing Heuristics** [[pdf]](https://egesarac.github.io/files/eswa21.pdf)\
+**Boosting Expensive Synchronizing Heuristics** [[pdf]](https://egesarac.github.io/files/eswa21.pdf) [[code]](https://bitbucket.org/egesarac/boostexpsyncheur)\
 N. Ege Saraç, Ömer Faruk Altun, Kamil Tolga Atam, Sertaç Karahoda, Kamer Kaya, Hüsnü Yenigün\
 *Expert Systems with Applications (ESWA), Volume 167, 2021*
 
-**Monitorability Under Assumptions** [[pdf]](https://egesarac.github.io/files/rv20.pdf)\
+**Monitorability Under Assumptions** (invited paper) [[pdf]](https://egesarac.github.io/files/rv20.pdf)\
 Thomas A. Henzinger, N. Ege Saraç\*\
 *International Conference on Runtime Verification (RV) 2020*
 
