@@ -5,6 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+<span style="font-size:80%;">\*: first or corresponding author</span>
+
 **QuAK: Quantitative Automata Kit** (invited paper) [[pdf]](https://egesarac.github.io/files/isola24.pdf) [[code]](https://github.com/ista-vamos/QuAK)\
 Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Symposium On Leveraging Applications of Formal Methods (ISoLA) 2024*
@@ -22,7 +24,7 @@ Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Concurrency Theory (CONCUR) 2023*
 
 **Regular Methods for Operator Precedence Languages** [[pdf]](https://egesarac.github.io/files/icalp23.pdf)\
-Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
+Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\
 *International Colloquium on Automata, Languages and Programming (ICALP) 2023*
 
 **Quantitative Safety and Liveness** [[pdf]](https://egesarac.github.io/files/fossacs23.pdf)\
@@ -46,7 +48,6 @@ Thomas A. Henzinger, N. Ege Saraç\*\
 *International Conference on Runtime Verification (RV) 2020*
 
 **A Theory of Register Monitors** [[pdf]](https://egesarac.github.io/files/lics18.pdf)\
-Thomas Ferrère, Thomas A. Henzinger, N. Ege Saraç\*\
+Thomas Ferrère, Thomas A. Henzinger, N. Ege Saraç\
 *Symposium on Logic in Computer Science (LICS) 2018*
 
-<span style="font-size:80%;">\*: authors ordered alphabetically</span>
