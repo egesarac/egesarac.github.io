@@ -22,6 +22,8 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 # News
 
+<span style="color:gray">Dec '24.</span> Our tool demonstration paper *Automating the Analysis of Quantitative Automata with QuAK* is accepted for publication at TACAS 2025.
+
 <span style="color:gray">Sep '24.</span> Our paper *QuAK: Quantitative Automata Kit* will appear in ISoLA 2024 as an invited paper.
 
 <span style="color:gray">Sep '24.</span> I am attending AVM 2024 to present our work on the safety and liveness of quantitative properties and automata. Come say hi!
@@ -30,7 +32,7 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 <span style="color:gray">Jun '24.</span> I am visiting the [DEVINE team](https://devine.inria.fr/) to talk about our work on the safety and liveness of quantitative properties and automata. Many thanks to [Ocan Sankur](https://people.irisa.fr/Ocan.Sankur/) for the invitation!
 
-<span style="color:gray">Jun '24.</span> Our paper *Strategic Dominance: A New Preorder for Nondeterministic Processes* is accepted for publication at CONCUR 2024.
+<!-- <span style="color:gray">Jun '24.</span> Our paper *Strategic Dominance: A New Preorder for Nondeterministic Processes* is accepted for publication at CONCUR 2024. -->
 
 <!-- <span style="color:gray">Jul '23.</span> I will spend the next three months at the [Austrian Institute of Technology (AIT)](https://www.ait.ac.at/en/) as an intern, working on distributed monitoring under [Dejan Ničković](https://sites.google.com/view/nickovic). Looking forward to it! -->
 
