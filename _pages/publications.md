@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Automating the Analysis of Quantitative Automata with QuAK** [[pdf]](https://egesarac.github.io/files/tacas25.pdf) [[code]](https://github.com/ista-vamos/QuAK)\
+Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025*
+
 **QuAK: Quantitative Automata Kit** (invited paper) [[pdf]](https://egesarac.github.io/files/isola24.pdf) [[code]](https://github.com/ista-vamos/QuAK)\
 Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Symposium On Leveraging Applications of Formal Methods (ISoLA) 2024*
