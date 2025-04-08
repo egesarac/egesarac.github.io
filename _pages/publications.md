@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Safety and Liveness of Quantitative Properties and Automata** (CONCUR'23 special issue) [[pdf]](https://egesarac.github.io/files/lmcs25.pdf)\
+Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
+*Logical Methods in Computer Science (LMCS), Volume 21, Issue 2, 2025*
+
 **Automating the Analysis of Quantitative Automata with QuAK** [[pdf]](https://egesarac.github.io/files/tacas25.pdf) [[code]](https://github.com/ista-vamos/QuAK)\
 Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025*
