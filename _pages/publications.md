@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Quantitative Language Automata** [[pdf]](https://egesarac.github.io/files/concur25.pdf)\
+Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
+*International Conference on Concurrency Theory (CONCUR) 2025*
+
 **Safety and Liveness of Quantitative Properties and Automata** (CONCUR'23 special issue) [[pdf]](https://egesarac.github.io/files/lmcs25.pdf)\
 Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *Logical Methods in Computer Science (LMCS), Volume 21, Issue 2, 2025*
