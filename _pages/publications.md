@@ -5,11 +5,16 @@ permalink: /publications/
 author_profile: true
 ---
 
+**A Monitoring-Oriented Theory and Classification of Quantitative Specifications** [[pdf]](https://egesarac.github.io/files/phdThesis_egesarac.pdf)\
+N. Ege Saraç\*\
+*PhD Thesis, Institute of Science and Technology Austria (ISTA), 2025 -- shortlisted for the ISTA Outstanding PhD Thesis Award (top 8%)*
+(read my PhD research proposal [here](https://egesarac.github.io/files/proposal21.pdf))
+
 **Quantitative Language Automata** [[pdf]](https://egesarac.github.io/files/concur25.pdf)\
 Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
 *International Conference on Concurrency Theory (CONCUR) 2025*
 
-**Safety and Liveness of Quantitative Properties and Automata** (CONCUR'23 special issue) [[pdf]](https://egesarac.github.io/files/lmcs25.pdf)\
+**Safety and Liveness of Quantitative Properties and Automata** [[pdf]](https://egesarac.github.io/files/lmcs25.pdf)\
 Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 *Logical Methods in Computer Science (LMCS), Volume 21, Issue 2, 2025*
 
@@ -23,7 +28,7 @@ Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 
 **Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy** [[pdf]](https://egesarac.github.io/files/rv24.pdf) [[code]](https://github.com/egesarac/ApxDistMon)\
 Borzoo Bonakdarpour, Anik Momtaz, Dejan Ničković, N. Ege Saraç\*\
-*International Conference on Runtime Verification (RV) 2024*
+*International Conference on Runtime Verification (RV) 2024 -- invited to STTT special issue*
 
 **Strategic Dominance: A New Preorder for Nondeterministic Processes** [[pdf]](https://egesarac.github.io/files/concur24.pdf)\
 Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
@@ -31,7 +36,7 @@ Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
 
 **Safety and Liveness of Quantitative Automata** [[pdf]](https://egesarac.github.io/files/concur23.pdf)\
 Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\
-*International Conference on Concurrency Theory (CONCUR) 2023*
+*International Conference on Concurrency Theory (CONCUR) 2023 -- invited to LMCS special issue*
 
 **Regular Methods for Operator Precedence Languages** [[pdf]](https://egesarac.github.io/files/icalp23.pdf)\
 Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\

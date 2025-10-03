@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "N. Ege Saraç"
   avatar           : "pp.png"
-  bio              : "PhD Candidate in Computer Science at Institute of Science and Technology Austria (ISTA)"
-  location         : "Vienna, Austria"
+  bio              : "Postdoctoral Researcher in Computer Science at CISPA Helmholtz Center for Information Security"
+  location         : #"Vienna, Austria"
   employer         : 
   pubmed           : 
   googlescholar    : citations?user=5oDTOfUAAAAJ&hl=en
-  email            : esarac@ista.ac.at
+  email            : ege.sarac@cispa.de
   researchgate     : 
   uri              :
   bitbucket        :

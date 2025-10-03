@@ -8,19 +8,19 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD candidate in computer science at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/), where I am supervised by [Tom Henzinger](https://pub.ist.ac.at/~tah/).
+I am a postdoctoral researcher in computer science at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en), working in the [Reactive Systems Group](https://finkbeiner.groups.cispa.de/) led by [Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html). Before that, I completed my PhD in 2025 at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/) under the supervision of [Tom Henzinger](https://pub.ist.ac.at/~tah/).
 
-My research aims to establish a framework for online and best-effort monitoring for quantitative specifications, highlighting various tradeoffs in monitor design. I am also interested in runtime verification and formal methods in general, with a soft spot for automata theory.
+My research focuses on *quantitative aspects of software systems*, aiming to develop lightweight and best-effort verification methods that explicitly balance precision against efficiency. I am broadly interested in runtime verification and formal methods, with a soft spot for automata theory.
 
-# Research
+<!-- # Research
 
 Runtime verification (RV) is a lightweight, dynamic technique that determines whether a system's run satisfies its specification. For this, a monitor watches a trace of a system and, if possible, decides after observing each finite prefix whether or not the unknown infinite trace meets a given specification. Theoretically, RV moves the burden from emptiness checking in static verification to membership checking, an easier problem. This shift introduces the opportunity to use more powerful formalisms.
 
-My research focuses on abstractions that enable reasoning about quantitative information and moving RV to a quantitative setting. Such a setting is attractive because quantitative verdicts can be approximate and thus compared regarding their precision, which may be traded against monitor resources. I aim to develop a framework for online and best-effort quantitative monitoring that subsumes **a cost-centric theory of monitorability** and **a precision-cost theory of approximate monitoring**. Moreover, I plan to extend the framework to monitors that take corrective action and decentralized monitoring. 
-
-Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21.pdf).
+My research focuses on abstractions that enable reasoning about quantitative information and moving RV to a quantitative setting. Such a setting is attractive because quantitative verdicts can be approximate and thus compared regarding their precision, which may be traded against monitor resources. I aim to develop a framework for online and best-effort quantitative monitoring that subsumes **a cost-centric theory of monitorability** and **a precision-cost theory of approximate monitoring**. Moreover, I plan to extend the framework to monitors that take corrective action and decentralized monitoring.  -->
 
 # News
+
+<span style="color:gray">Oct '25.</span> I joined the Reactive Systems Group at CISPA Helmholtz Center for Information Security as a postdoctoral researcher.
 
 <span style="color:gray">May '25.</span> Our paper *Quantitative Language Automata* is accepted for publication at CONCUR 2025.
 
@@ -30,7 +30,7 @@ Read my PhD research proposal [here](https://egesarac.github.io/files/proposal21
 
 <span style="color:gray">Sep '24.</span> Our paper *QuAK: Quantitative Automata Kit* will appear in ISoLA 2024 as an invited paper.
 
-<span style="color:gray">Sep '24.</span> I am attending AVM 2024 to present our work on the safety and liveness of quantitative properties and automata. Come say hi!
+<!-- <span style="color:gray">Sep '24.</span> I am attending AVM 2024 to present our work on the safety and liveness of quantitative properties and automata. Come say hi! -->
 
 <!-- <span style="color:gray">Jun '24.</span> Our paper *Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy* is accepted for publication at RV 2024. -->
 

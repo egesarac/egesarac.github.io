@@ -3,14 +3,17 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Talks"
+    url: /talks/  
+
   - title: "Service"
     url: /service/ 
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Teaching and Mentoring"
+    url: /teaching_and_mentoring/
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Software"
+  #   url: /software/ 
 
   - title: "CV"
     url: /files/cv_egesarac.pdf
