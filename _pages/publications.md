@@ -7,7 +7,8 @@ author_profile: true
 
 **A Monitoring-Oriented Theory and Classification of Quantitative Specifications** [[pdf]](https://egesarac.github.io/files/phdThesis_egesarac.pdf)\
 N. Ege Saraç\*\
-*PhD Thesis, Institute of Science and Technology Austria (ISTA), 2025 -- shortlisted for the ISTA Outstanding PhD Thesis Award (top 8%)*
+*PhD Thesis, Institute of Science and Technology Austria (ISTA), 2025*'\
+Shortlisted for the ISTA Outstanding PhD Thesis Award (top 8%)\
 (read my PhD research proposal [here](https://egesarac.github.io/files/proposal21.pdf))
 
 **Quantitative Language Automata** [[pdf]](https://egesarac.github.io/files/concur25.pdf)\
