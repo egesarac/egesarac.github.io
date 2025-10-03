@@ -5,6 +5,8 @@ permalink: /teaching_and_mentoring/
 author_profile: true
 ---
 
+**<u>Teaching</u>^**
+
 **Formalisms Every Computer Scientist Should Know** (2023 - 2024)\
 Teaching assistant at *ISTA*
 
@@ -20,7 +22,7 @@ Teaching assistant at *Sabancı University*
 **Mathematics & Natural Sciences** (2015 - 2018)\
 Peer study and workshop moderator at *Sabancı University*
 
----
+**<u>Mentoring and Supervision</u>**
 
 **Alumni speaker** (2025)\
 at the Graduate School Welcome Event at *ISTA*
