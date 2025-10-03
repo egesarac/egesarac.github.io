@@ -5,7 +5,7 @@ permalink: /teaching_and_mentoring/
 author_profile: true
 ---
 
-**<u>Teaching</u>^**
+**<u>Teaching</u>**
 
 **Formalisms Every Computer Scientist Should Know** (2023 - 2024)\
 Teaching assistant at *ISTA*
