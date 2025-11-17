@@ -10,7 +10,8 @@ redirect_from:
 
 I am a postdoctoral researcher in computer science at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en), working in the [Reactive Systems Group](https://finkbeiner.groups.cispa.de/) led by [Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html). Before that, I completed my PhD in 2025 at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/) under the supervision of [Tom Henzinger](https://pub.ist.ac.at/~tah/).
 
-My research focuses on *quantitative aspects of software systems*, aiming to develop lightweight and best-effort verification methods that explicitly balance precision against efficiency. I am broadly interested in runtime verification and formal methods, with a soft spot for automata theory.
+<!-- My research focuses on *quantitative aspects of software systems*, aiming to develop lightweight and best-effort verification methods that explicitly balance precision against efficiency. I am broadly interested in runtime verification and formal methods, with a soft spot for automata theory. -->
+I study how to verify complex systems efficiently when computational resources are limited. My work on *resource-aware quantitative verification* makes the tradeoff between precision and resources explicit and analyzable. More broadly, I work in runtime verification and formal methods, often using automata-theoretic techniques.
 
 <!-- # Research
 

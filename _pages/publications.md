@@ -13,7 +13,7 @@ Shortlisted for the ISTA Outstanding PhD Thesis Award (top 8%)\
 
 **Quantitative Language Automata** [[pdf]](https://egesarac.github.io/files/concur25.pdf)\
 Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, N. Ege Saraç\*\
-*International Conference on Concurrency Theory (CONCUR) 2025*
+*International Conference on Concurrency Theory (CONCUR) 2025 -- invited to LMCS special issue*
 
 **Safety and Liveness of Quantitative Properties and Automata** [[pdf]](https://egesarac.github.io/files/lmcs25.pdf)\
 Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*\

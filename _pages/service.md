@@ -6,10 +6,10 @@ author_profile: true
 ---
 
 **Co-organizer**\
-HYPER 2026 (planned as a FLoC/CAV 2026 workshop)
+HYPER 2026 workshop (co-located with FLoC/CAV 2026)
 
 **Program committee member**\
-VMCAI 2026 (artifact evaluation), CAV 2025 (artifact evaluation), CAV 2024 (artifact evaluation)
+CONCUR 2026, VMCAI 2026 (AEC), CAV 2025 (AEC), CAV 2024 (AEC)
 
 **Reviewer**\
 <span style="color:gray">Conferences:</span> CONCUR 2025, RV 2024 (x2), MFCS 2024, FSTTCS 2023, ATVA 2023, CONCUR 2023\
