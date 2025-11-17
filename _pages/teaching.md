@@ -24,7 +24,7 @@ Peer study and workshop moderator at *Sabancı University*
 
 **<u>Mentoring and Supervision</u>**
 
-**Co-supervisor**\
+**Co-supervisor**
 - of an undergraduate intern in *Thomas Henzinger Group, ISTA* (2025)\
 &nbsp;Project: Extending [QuAK](https://github.com/ista-vamos/QuAK) with nested quantitative automata support
 - of a rotation student in *Thomas Henzinger Group, ISTA* (2024)\
