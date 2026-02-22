@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "N. Ege Saraç"
 title_separator          : "-"
 name                     : &name "N. Ege Saraç"
-description              : &description "PhD candidate at ISTA"
+description              : &description "Postdoctoral Researcher at CISPA"
 url                      : https://egesarac.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "egesarac/egesarac.github.io"
@@ -83,7 +83,7 @@ author:
   name             : "N. Ege Saraç"
   avatar           : "pp.png"
   bio              : "Postdoctoral Researcher in Computer Science at CISPA Helmholtz Center for Information Security"
-  location         : #"Vienna, Austria"
+  location         : "Munich, Germany"
   employer         : 
   pubmed           : 
   googlescholar    : citations?user=5oDTOfUAAAAJ&hl=en
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : 
   lastfm           :
-  linkedin         :
+  linkedin         : negesarac
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

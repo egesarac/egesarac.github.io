@@ -5,24 +5,26 @@ permalink: /teaching_and_mentoring/
 author_profile: true
 ---
 
-**<u>Teaching</u>**
+### Teaching
 
-**Formalisms Every Computer Scientist Should Know** (2023 - 2024)\
+**Formalisms Every Computer Scientist Should Know** (Fall 2023)\
 Teaching assistant at *ISTA*
 
-**Foundations of Model Checking** (2023)\
+**Foundations of Model Checking** (Spring 2023)\
 Guest lecturer at *ISTA*
 
-**Formal Methods: Algorithmic Approaches** (2022)\
+**Formal Methods: Algorithmic Approaches** (Spring 2022)\
 Teaching assistant at *ISTA*
 
-**Algorithms** (2018 - 2019)\
+**Algorithms** (Fall 2018 - Spring 2019)\
 Teaching assistant at *Sabancı University*
 
-**Mathematics & Natural Sciences** (2015 - 2018)\
+**Mathematics & Natural Sciences** (Spring 2015 - Spring 2018)\
 Peer study and workshop moderator at *Sabancı University*
 
-**<u>Mentoring and Supervision</u>**
+---
+
+### Mentoring and Supervision
 
 **Co-supervisor**
 - of an undergraduate intern in *Thomas Henzinger Group, ISTA* (2025)\

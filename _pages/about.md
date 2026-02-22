@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher in computer science at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en), working in the [Reactive Systems Group](https://finkbeiner.groups.cispa.de/) led by [Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html). Before that, I completed my PhD in 2025 at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/) under the supervision of [Tom Henzinger](https://pub.ist.ac.at/~tah/).
+I am a postdoctoral researcher at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) and a visiting researcher at the [Technical University of Munich (TUM)](https://www.tum.de/en/), working in the [Reactive Systems Group](https://finkbeiner.groups.cispa.de/) led by [Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html). Before that, I completed my PhD in 2025 at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/) under the supervision of [Tom Henzinger](https://pub.ist.ac.at/~tah/).
 
 <!-- My research focuses on *quantitative aspects of software systems*, aiming to develop lightweight and best-effort verification methods that explicitly balance precision against efficiency. I am broadly interested in runtime verification and formal methods, with a soft spot for automata theory. -->
 I study how to verify complex systems efficiently when computational resources are limited. My work on *resource-aware quantitative verification* makes the tradeoff between precision and resources explicit and analyzable. More broadly, I work in runtime verification and formal methods, often using automata-theoretic techniques.
@@ -21,15 +21,19 @@ My research focuses on abstractions that enable reasoning about quantitative inf
 
 # News
 
+<span style="color:gray">Feb '26.</span> My MSCA Postdoctoral Fellowship project *Quantitative Hyperproperties: Specification, Taxonomy, and Runtime Monitoring (QHyperSTAR)* has been selected for funding!
+
+<span style="color:gray">Feb '26.</span> Our paper *Quantitative Monitoring of Signal First-Order Logic* is accepted for publication at FM 2026.
+
 <span style="color:gray">Oct '25.</span> I joined the Reactive Systems Group at CISPA Helmholtz Center for Information Security as a postdoctoral researcher.
 
 <span style="color:gray">May '25.</span> Our paper *Quantitative Language Automata* is accepted for publication at CONCUR 2025.
 
 <span style="color:gray">Apr '25.</span> Our paper *Safety and Liveness of Quantitative Properties and Automata* is published in LMCS Vol. 21, Iss. 2.
 
-<span style="color:gray">Dec '24.</span> Our tool demonstration paper *Automating the Analysis of Quantitative Automata with QuAK* is accepted for publication at TACAS 2025.
+<!-- <span style="color:gray">Dec '24.</span> Our tool demonstration paper *Automating the Analysis of Quantitative Automata with QuAK* is accepted for publication at TACAS 2025. -->
 
-<span style="color:gray">Sep '24.</span> Our paper *QuAK: Quantitative Automata Kit* will appear in ISoLA 2024 as an invited paper.
+<!-- <span style="color:gray">Sep '24.</span> Our paper *QuAK: Quantitative Automata Kit* will appear in ISoLA 2024 as an invited paper. -->
 
 <!-- <span style="color:gray">Sep '24.</span> I am attending AVM 2024 to present our work on the safety and liveness of quantitative properties and automata. Come say hi! -->
 

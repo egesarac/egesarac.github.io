@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Quantitative Monitoring of Signal First-Order Logic** [[pdf]](https://egesarac.github.io/files/fm26.pdf) [[code]](https://github.com/ista-vamos/qsfo)\
+Marek Chalupa, Thomas A. Henzinger, N. Ege Saraç\*, Emily Yu\
+*International Symposium on Formal Methods (FM) 2026*
+
 **A Monitoring-Oriented Theory and Classification of Quantitative Specifications** [[pdf]](https://egesarac.github.io/files/phdThesis_egesarac.pdf)\
 N. Ege Saraç\*\
 *PhD Thesis, Institute of Science and Technology Austria (ISTA), 2025*\
