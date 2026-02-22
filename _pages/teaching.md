@@ -5,7 +5,7 @@ permalink: /teaching_and_mentoring/
 author_profile: true
 ---
 
-### Teaching
+## Teaching
 
 **Formalisms Every Computer Scientist Should Know** (Fall 2023)\
 Teaching assistant at *ISTA*
@@ -24,7 +24,7 @@ Peer study and workshop moderator at *Sabancı University*
 
 ---
 
-### Mentoring and Supervision
+## Mentoring and Supervision
 
 **Co-supervisor**
 - of an undergraduate intern in *Thomas Henzinger Group, ISTA* (2025)\
