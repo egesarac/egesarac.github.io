@@ -6,13 +6,13 @@ author_profile: true
 ---
 
 **MSCA Postdoctoral Fellowship** (2026)\
-Selected for funding with a score of 98.8% (~€202k), *European Commission*
+Selected for funding with a score of 98.8%, *European Commission*
 
 **Research paper selected for post-conference journal special issue** (2025)\
 *CONCUR 2025*
 
 **COMPASS Mentoring Program** (2025)\
-Chosen as one of 24 participants from 10 Helmholtz Centers (~€2k), *Helmholtz Association*
+Chosen as one of 24 participants from 10 Helmholtz Centers, *Helmholtz Association*
 
 **Shortlisted for the ISTA Outstanding PhD Thesis Award** (2025)\
 Awarded to top 8% of all theses, *ISTA*
@@ -24,13 +24,13 @@ Awarded to top 8% of all theses, *ISTA*
 *CONCUR 2023*
 
 **Sakıp Sabancı Award for the Highest Ranking Student** (2019)\
-~€10k, *Sabancı University*
+*Sabancı University*
 
 **Logic Mentoring Workshop Student Travel Grant** (2018)\
-~€500, *ACM SIGLOG*
+*ACM SIGLOG*
 
 **Scholarship for Student Researchers** (2017)\
-~€3.5k, *Österreichischer Austauschdienst (OeAD)*
+*Österreichischer Austauschdienst (OeAD)*
 
 **Merit-based full scholarship for BSc studies** (2014)\
-~€65k, *Sabancı University*
+*Sabancı University*
