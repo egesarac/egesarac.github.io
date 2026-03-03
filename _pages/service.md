@@ -6,10 +6,10 @@ author_profile: true
 ---
 
 **Co-organizer**\
-HYPER 2026 workshop (co-located with FLoC/CAV 2026)
+[HYPER 2026](https://hyperworkshop26.cispa.io/) (co-located with FLoC/CAV 2026)
 
 **Program committee member**\
-CONCUR 2026, VMCAI 2026 (AEC), CAV 2025 (AEC), CAV 2024 (AEC)
+CONCUR 2026; CAV 2026 (AEC), VMCAI 2026 (AEC), CAV 2025 (AEC), CAV 2024 (AEC)
 
 **Reviewer**\
 <span style="color:gray">Conferences:</span> CONCUR 2025, RV 2024 (x2), MFCS 2024, FSTTCS 2023, ATVA 2023, CONCUR 2023\
