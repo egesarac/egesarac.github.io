@@ -5,6 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
+**Extending QuAK with Nested Quantitative Automata** [[pdf]](https://egesarac.github.io/files/cav26.pdf) [[code]](https://egesarac.github.io/404)\
+Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*, and Harun Yılmaz
+*International Conference on Computer Aided Verification (CAV) 2026*
+
 **Quantitative Monitoring of Signal First-Order Logic** [[pdf]](https://egesarac.github.io/files/fm26.pdf) [[code]](https://github.com/ista-vamos/artifact-fm-qsfo)\
 Marek Chalupa, Thomas A. Henzinger, N. Ege Saraç\*, Emily Yu\
 *International Symposium on Formal Methods (FM) 2026*

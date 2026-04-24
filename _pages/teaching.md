@@ -7,6 +7,9 @@ author_profile: true
 
 ## Teaching
 
+**Functional Programming and Verification** (Summer 2026)\
+Head teaching assistant at *TUM*
+
 **Formalisms Every Computer Scientist Should Know** (Fall 2023)\
 Teaching assistant at *ISTA*
 
@@ -28,9 +31,9 @@ Peer study and workshop moderator at *Sabancı University*
 
 **Co-supervisor**
 - Harun Yılmaz in *Thomas Henzinger Group, ISTA* (2025)\
-&nbsp;Project: Extending [QuAK](https://github.com/ista-vamos/QuAK) with nested quantitative automata support
+&nbsp;Project: Extending [QuAK](https://github.com/ista-vamos/QuAK) with nested quantitative automata support (CAV 2026)
 - Pavol Kebis in *Thomas Henzinger Group, ISTA* (2024, 2022)\
-&nbsp;Projects: Probabilistic semantics of an automata model for quantitative hyperproperties + Algebraic characterization and model checking of recursive programs
+&nbsp;Projects: Automata models for quantitative hyperproperties (CONCUR 2025) + Algebraic characterization and model checking of recursive programs (ICALP 2023)
 
 **Alumni speaker** (2025)\
 at the Graduate School Welcome Event at *ISTA*
