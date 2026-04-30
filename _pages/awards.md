@@ -5,6 +5,12 @@ permalink: /awards/
 author_profile: true
 ---
 
+**Invited participant** (2027)\
+*Dagstuhl Seminar* "Towards a Unified Theory and Application of Hyperproperties"
+
+**Invited participant** (2026)\
+*Autobóz* research camp on logic, automata, and games
+
 **MSCA Postdoctoral Fellowship** (2026)\
 Selected for funding with a score of 98.8%, *European Commission*
 
