@@ -21,6 +21,8 @@ My research focuses on abstractions that enable reasoning about quantitative inf
 
 # News
 
+<span style="color:gray">Jun '26.</span> Our paper *Monitoring Discounted Sum Properties* is accepted for publication at CONCUR 2026.
+
 <span style="color:gray">Apr '26.</span> Our paper *Extending QuAK with Nested Quantitative Automata* is accepted for publication at CAV 2026.
 
 <span style="color:gray">Feb '26.</span> My MSCA Postdoctoral Fellowship project *Quantitative Hyperproperties: Specification, Taxonomy, and Runtime Monitoring (QHyperSTAR)* has been selected for funding!
@@ -29,7 +31,7 @@ My research focuses on abstractions that enable reasoning about quantitative inf
 
 <span style="color:gray">Oct '25.</span> I joined the Reactive Systems Group at CISPA Helmholtz Center for Information Security as a postdoctoral researcher.
 
-<span style="color:gray">May '25.</span> Our paper *Quantitative Language Automata* is accepted for publication at CONCUR 2025.
+<!-- <span style="color:gray">May '25.</span> Our paper *Quantitative Language Automata* is accepted for publication at CONCUR 2025. -->
 
 <!-- <span style="color:gray">Apr '25.</span> Our paper *Safety and Liveness of Quantitative Properties and Automata* is published in LMCS Vol. 21, Iss. 2. -->
 

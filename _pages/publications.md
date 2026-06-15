@@ -5,7 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-**Extending QuAK with Nested Quantitative Automata** [[pdf]](https://egesarac.github.io/files/cav26.pdf) [[code]](https://egesarac.github.io/404)\
+**Monitoring Discounted Sum Properties** [[pdf]](https://egesarac.github.io/files/concur26.pdf) [[code]](https://github.com/filipcano/monitoring-discounted-sum-properties)\
+Filip Cano, Thomas A. Henzinger, Konstantin Kueffner, and N. Ege Saraç\
+*International Conference on Concurrency Theory (CONCUR) 2026*
+
+**Extending QuAK with Nested Quantitative Automata** [[pdf]](https://egesarac.github.io/files/cav26.pdf) [[code]](https://github.com/ista-vamos/nested-quak)\
 Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç\*, and Harun Yılmaz\
 *International Conference on Computer Aided Verification (CAV) 2026*
 

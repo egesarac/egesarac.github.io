@@ -5,13 +5,20 @@ permalink: /talks/
 author_profile: true
 ---
 
+**Extending QuAK with Nested Quantitative Automata**\
+[38th Intl. Conf. on Computer Aided Verification (CAV)](https://conferences.i-cav.org/2026/) (Jul '26)
+
+**Quantitative Monitoring of Signal First-Order Logic**\
+[AIT Center for Digital Safety & Security](https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security) Seminar Series (Jun '26)\
+[27th Intl. Symp. on Formal Methods (FM)](https://conf.researchr.org/home/fm-2026) (May '26)
+
 **Quantitative Language Automata**\
 [19th Intl. Conf. on Reachability Problems (RP)](https://rp25.software.imdea.org/) (Oct '25)\
 [36th Intl. Conf. on Concurrency Theory (CONCUR)](https://conferences.au.dk/confest2025/concur) (Aug '25)
 
 **Approximate Distributed Monitoring under Partial Synchrony**\
 [24th Intl. Conf. on Runtime Verification (RV)](https://cmpe.bogazici.edu.tr/rv24/) (Oct '24)\
-[AIT Dependable Systems Engineering](https://www.ait.ac.at/en/research-topics/dependable-systems-engineering) Seminar Series (Oct '24)
+[AIT Center for Digital Safety & Security](https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security) Seminar Series (Oct '24)
 
 **Safety and Liveness of Quantitative Properties and Automata**\
 [RWTH Aachen Software Modeling and Verification Group](https://moves.rwth-aachen.de/) Seminar Series (Mar '25)\
@@ -21,7 +28,7 @@ author_profile: true
 [TU Wien CPS Research Unit](https://informatics.tuwien.ac.at/orgs/e191-01) Seminar Series (Sep '24)\
 [16th Alpine Verification Meeting](https://avm2024.informatik.uni-freiburg.de/) (Sep '24)\
 [DEVINE Research Team (Inria and IRISA)](https://devine.inria.fr/) Formal Methods Seminar (Jun '24)\
-[AIT Dependable Systems Engineering](https://www.ait.ac.at/en/research-topics/dependable-systems-engineering) Seminar Series (Oct '23)\
+[AIT Center for Digital Safety & Security](https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security) Seminar Series (Oct '23)\
 [26th Intl. Conf. on Foundations of Software Science and Computation Structures (FoSSaCS)](https://etaps.org/2023/) (Apr '23)
 
 **Advancing the Theory of Quantitative Algorithmic Monitoring**\
