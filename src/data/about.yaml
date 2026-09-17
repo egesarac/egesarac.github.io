@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────
+# Home page. `bio` is a list of paragraphs; *italics* and
+# [links](https://…) work everywhere.
+# ─────────────────────────────────────────────────────────────
+
+bio:
+  - >-
+    I am a Marie Skłodowska-Curie Postdoctoral Fellow at the [CISPA Helmholtz Center for Information Security](https://cispa.de/en) and a visiting researcher at the [Technical University of Munich (TUM)](https://www.tum.de/en/),
+    working in the [Reactive Systems Group](https://finkbeiner.groups.cispa.de/) led by [Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner/).
+    Before that, I completed my PhD in 2025 at the [Institute of Science and Technology Austria (ISTA)](https://ista.ac.at/en/home/) under [Tom Henzinger](https://pub.ist.ac.at/~tah/)'s supervision.
+
+  - >-
+    My research aims to help people build *dependable computer systems*.
+    To this end, I develop theories and algorithms for formally specifying requirements and verifying systems against them.
+
+  - >-
+    A central challenge motivating my work is to ensure that these systems align with *human values* such as privacy, fairness, and explainability.
+    I work toward a unified framework for efficiently measuring *how well* systems satisfy such requirements.
+    My MSCA Postdoctoral Fellowship project [QHyperSTAR](https://cordis.europa.eu/project/id/101276381) lays the foundations for this approach by advancing the theory of quantitative hyperproperties and developing memory-efficient runtime monitoring algorithms.
+
+news:
+  - date: Jun '26
+    text: >-
+      Our paper *Monitoring Discounted Sum Properties* is accepted for
+      publication at CONCUR 2026.
+
+  - date: Apr '26
+    text: >-
+      Our paper *Extending QuAK with Nested Quantitative Automata* is accepted
+      for publication at CAV 2026.
+
+  - date: Feb '26
+    text: >-
+      My MSCA Postdoctoral Fellowship project *Quantitative Hyperproperties:
+      Specification, Taxonomy, and Runtime Monitoring (QHyperSTAR)* has been
+      selected for funding!
+
+  - date: Feb '26
+    text: >-
+      Our paper *Quantitative Monitoring of Signal First-Order Logic* is
+      accepted for publication at FM 2026.
+
+  - date: Oct '25
+    text: >-
+      I joined the Reactive Systems Group at CISPA Helmholtz Center for
+      Information Security as a postdoctoral researcher.

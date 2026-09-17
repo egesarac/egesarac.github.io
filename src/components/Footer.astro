@@ -1,0 +1,16 @@
+---
+import { execFileSync } from 'node:child_process';
+import ContactRow from './ContactRow.astro';
+import { site } from '../lib/data';
+
+const edited = new Date(execFileSync('git', ['log', '-1', '--format=%cI', 'HEAD'], { encoding: 'utf8' }).trim());
+const year = new Date().getFullYear();
+const updated = edited.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+
+<footer class="site-foot">
+  <div class="wrap">
+    <ContactRow />
+    <p class="colophon">© {year} {site.name} · Last updated on {updated}</p>
+  </div>
+</footer>

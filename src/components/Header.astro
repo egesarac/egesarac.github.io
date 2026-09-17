@@ -1,0 +1,96 @@
+---
+import { site } from '../lib/data';
+
+const items = [
+  { label: 'About', href: '/' },
+  { label: 'Research', href: '/research/' },
+  { label: 'Publications', href: '/publications/' },
+  { label: 'Talks', href: '/talks/' },
+  { label: 'Teaching', href: '/teaching/' },
+  { label: 'Supervision', href: '/supervision/' },
+];
+
+const normalize = (path: string) => (path === '/' ? '/' : path.replace(/\/+$/, '') + '/');
+const current = normalize(Astro.url.pathname);
+---
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="mark" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 18V6h16v12H9v-7h6.5" fill="none" stroke="currentColor" stroke-width="1.8"></path>
+      </svg>
+      {site.name}
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      {items.map((item) => (
+        <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+      <a href={site.cv}>CV</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.6 13.4A8.4 8.4 0 1 1 10.6 3.4a6.8 6.8 0 0 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+        </svg>
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square">
+            <circle cx="12" cy="12" r="3.7"></circle>
+            <path d="M12 2.8v2.1M12 19.1v2.1M2.8 12h2.1M19.1 12h2.1M5.6 5.6l1.5 1.5M16.9 16.9l1.5 1.5M18.4 5.6l-1.5 1.5M7.1 16.9l-1.5 1.5"></path>
+          </g>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const PAPER = { light: '#fdfdfd', dark: '#16181b' };
+
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const systemPreference = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const systemTheme = () => (systemPreference.matches ? 'dark' : 'light');
+  const activeTheme = () =>
+    root.dataset.theme === 'light' || root.dataset.theme === 'dark'
+      ? root.dataset.theme
+      : systemTheme();
+  const syncThemeColor = (override: string | undefined) => {
+    for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+      const system = (meta.getAttribute('media') ?? '').includes('dark') ? PAPER.dark : PAPER.light;
+      meta.setAttribute('content', override === 'dark' || override === 'light' ? PAPER[override] : system);
+    }
+  };
+
+  const syncToggleLabel = () => {
+    const next = activeTheme() === 'dark' ? 'light' : 'dark';
+    toggle?.setAttribute('aria-label', `Switch to ${next} mode`);
+  };
+
+  const syncTheme = () => {
+    syncThemeColor(root.dataset.theme);
+    syncToggleLabel();
+  };
+
+  toggle?.addEventListener('click', () => {
+    const next = activeTheme() === 'dark' ? 'light' : 'dark';
+
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem('theme', next);
+    } catch {
+      // The visual choice still applies for this page if storage is blocked.
+    }
+
+    syncTheme();
+  });
+
+  systemPreference.addEventListener('change', () => {
+    if (!root.dataset.theme) {
+      syncTheme();
+    }
+  });
+
+  syncTheme();
+</script>

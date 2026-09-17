@@ -1,0 +1,39 @@
+---
+import ResourceLink from './ResourceLink.astro';
+import { authors } from '../lib/md';
+import type { Publication } from '../lib/data';
+
+interface Props {
+  pub: Publication;
+  summary: string;
+}
+
+const { pub, summary } = Astro.props;
+const { volume, issue } = pub;
+// The full bibliography explains author-role markers; the homepage uses a compact citation.
+const authorList = pub.authors.replaceAll('*', '');
+---
+
+<article class="selected-pub">
+  <div class="selected-pub-heading">
+    <h3>{pub.title}</h3>{' '}
+    <span class="pub-venue selected-pub-venue">
+      <span aria-hidden="true">·</span>{' '}
+      <span class="tag">
+        {pub.short ? <abbr title={pub.venue}>{pub.short}</abbr> : pub.venue}
+        {volume !== undefined ? ` ${volume}${issue !== undefined ? `(${issue})` : ''} ` : ' '}<time datetime={String(pub.year)}>{pub.year}</time>
+      </span>
+    </span>
+    {pub.links && pub.links.length > 0 && (
+      <>
+        {' '}<span class="resource-links selected-pub-links">
+          {pub.links.map((link) => (
+            <ResourceLink href={link.url} label={link.label} ariaLabel={`${link.label === 'pdf' ? 'PDF' : link.label} for ${pub.title}`} />
+          ))}
+        </span>
+      </>
+    )}
+  </div>
+  <p class="pub-authors" set:html={authors(authorList)} />
+  <p class="selected-pub-summary">{summary}</p>
+</article>

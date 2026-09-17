@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────────────────────────
+# Teaching experience.
+# ─────────────────────────────────────────────────────────────
+
+- course: The Hitchhiker's Guide to Hyperproperties
+  role: Co-instructor
+  org: TUM
+  when: Winter 2026/27
+  links:
+    - label: info
+      url: 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950974984'
+
+- course: Functional Programming and Verification
+  role: Head teaching assistant
+  org: TUM
+  when: Summer 2026
+  links:
+    - label: info
+      url: 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950878525?$ctx=lang=EN&$scrollTo=toc_overview'
+
+- course: Formalisms Every Computer Scientist Should Know
+  role: Teaching assistant
+  org: ISTA
+  when: Fall 2023
+  links:
+    - label: info
+      url: https://athena.ista.ac.at/node/32309
+    - label: materials
+      url: https://github.com/saona-raimundo/formalisms_every_computer_scientist_should_know
+
+- course: Foundations of Model Checking
+  role: Guest lecturer
+  org: ISTA
+  when: Spring 2023
+  links:
+    - label: info
+      url: https://athena.ista.ac.at/node/543
+
+- course: "Formal Methods: Algorithmic Approaches"
+  role: Teaching assistant
+  org: ISTA
+  when: Spring 2022
+  links:
+    - label: info
+      url: https://courses.ista.ac.at/course/info.php?id=952
+
+- course: Algorithms
+  role: Teaching assistant
+  org: Sabancı University
+  when: Fall 2018 – Spring 2019
+  links:
+    - label: info
+      url: https://www.sabanciuniv.edu/syllabus/courses.php?code=301&lan=eng&subject=CS&term=01&year=2018
+
+- course: Mathematics & Natural Sciences
+  role: Peer study and workshop moderator
+  org: Sabancı University
+  when: Spring 2015 – Spring 2018
+  links:
+    - label: info
+      url: https://adp.sabanciuniv.edu/en

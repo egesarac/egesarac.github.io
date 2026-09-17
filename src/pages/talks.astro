@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { talks, site } from '../lib/data';
+
+const description = `Invited and conference talks by ${site.name}.`;
+---
+
+<Base title="Talks" description={description} contentStyles>
+  <h1 class="label">Talks</h1>
+
+  {talks.map((talk) => (
+    <article class="entry">
+      <div class="entry-heading">
+        <h2>{talk.title}</h2>
+        {(talk.slides || talk.video) && (
+          <span class="resource-links entry-resource">
+            {talk.slides && <ResourceLink href={talk.slides} label="slides" ariaLabel={`Slides for ${talk.title}`} />}
+            {talk.video && <ResourceLink href={talk.video} label="video" ariaLabel={`Video for ${talk.title}`} />}
+          </span>
+        )}
+      </div>
+      <dl class="rail">
+        {talk.given.map((venue) => (
+          <>
+            <dt>{venue.when}</dt>
+            <dd class="where">
+              {venue.url ? <a href={venue.url}>{venue.at}</a> : venue.at}
+            </dd>
+          </>
+        ))}
+      </dl>
+    </article>
+  ))}
+</Base>

@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactRow from '../components/ContactRow.astro';
+import NamePronunciation from '../components/NamePronunciation.astro';
+import SelectedPubEntry from '../components/SelectedPubEntry.astro';
+import { site, about, selectedPublications } from '../lib/data';
+import { md } from '../lib/md';
+
+const selected = selectedPublications();
+---
+
+<Base contentStyles>
+  <header class="hero">
+    <div>
+      <div class="hero-name">
+        <h1>{site.name}</h1>
+        {site.pronunciation && <NamePronunciation name={site.name} pronunciation={site.pronunciation} />}
+      </div>
+      <p class="role" set:html={md(site.role)} />
+      <ContactRow />
+    </div>
+    {site.portrait && <img class="portrait" src={site.portrait} alt={site.name} width="160" height="160" />}
+  </header>
+
+  <section aria-labelledby="about-label">
+    <h2 class="label" id="about-label">About</h2>
+    <div class="prose">
+      {about.bio.map((paragraph) => <p set:html={md(paragraph)} />)}
+    </div>
+  </section>
+
+  <section aria-labelledby="selected-publications-label">
+    <h2 class="label" id="selected-publications-label">Selected publications</h2>
+    <ul class="selected-pub-list" role="list">
+      {selected.map(({ pub, summary }) => (
+        <li><SelectedPubEntry pub={pub} summary={summary} /></li>
+      ))}
+    </ul>
+  </section>
+
+  <section aria-labelledby="news-label">
+    <h2 class="label" id="news-label">News</h2>
+    <dl class="rail">
+      {about.news.map((item) => (
+        <>
+          <dt>{item.date}</dt>
+          <dd set:html={md(item.text)} />
+        </>
+      ))}
+    </dl>
+  </section>
+</Base>

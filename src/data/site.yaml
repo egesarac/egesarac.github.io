@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────
+# Site-wide settings. Edit freely; every page reads from here.
+# ─────────────────────────────────────────────────────────────
+
+name: N. Ege Saraç
+
+# Phonetic guide shown beside your name on the home page.
+pronunciation: eh-GEH sah-RAHTCH
+
+# Home page portrait. Omit this field to hide it.
+portrait: /images/portrait.jpg
+
+# Shown under your name on the home page.
+role: >-
+  Postdoctoral Researcher @ [CISPA](https://cispa.de/en)
+  and [TUM](https://www.tum.de/en/)
+
+location: Munich, Germany
+
+# Your name is set in a heavier weight wherever it appears in author lists.
+highlight_author: N. Ege Saraç
+
+# Footer + home page links, in order.
+links:
+  - label: Email
+    url: mailto:ege.sarac@cispa.de
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=5oDTOfUAAAAJ&hl=en
+  - label: DBLP
+    url: https://dblp.org/pid/222/1242
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/negesarac
+
+# Path to your CV inside public/. Copy the PDF there and this link just works.
+cv: /files/cv_egesarac.pdf
+
+# One-line description used for search engines and link previews.
+description: >-
+  N. Ege Saraç is a postdoctoral researcher in formal methods and runtime
+  verification at the CISPA Helmholtz Center for Information Security in
+  Munich.

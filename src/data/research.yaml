@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────────────────────
+# Research overview. The three areas are deliberately concise:
+# this page introduces the ideas rather than replacing topic pages.
+# ─────────────────────────────────────────────────────────────
+
+intro: >-
+  I help people build dependable computer systems by developing theories and algorithms for formally specifying requirements and verifying systems against them.
+
+areas:
+  - title: Hyperproperties
+    image: /images/research/hyperproperties.webp
+    definition: >-
+      Hyperproperties specify correct system implementations by describing how different executions relate, capturing information-flow properties, algorithmic fairness, counterfactual causality, and more.
+    contribution: >-
+      I characterize the topological structure of hyperproperties, design languages to specify them, and develop methods to verify them.
+
+  - title: Quantitative verification
+    image: /images/research/quantitative-verification.webp
+    definition: >-
+      Quantitative properties assign numerical values to system executions, enabling reasoning about robustness, performance, and the severity of violations.
+    contribution: >-
+      I establish classifications and hierarchies of quantitative properties and develop automata-theoretic algorithms and software for their analysis and verification.
+
+  - title: Runtime monitoring
+    image: /images/research/runtime-monitoring.webp
+    definition: >-
+      Runtime monitoring observes system behavior during execution and assesses its correctness and performance against formal specifications.
+    contribution: >-
+      I determine how resource constraints affect monitorability and develop sound approximation techniques to reduce monitors' resource use with a bounded loss of precision.
+
+project:
+  title: QHyperSTAR
+  full_title: >-
+    Quantitative Hyperproperties: Specification, Taxonomy, and Runtime
+    Monitoring
+  programme: Marie Skłodowska-Curie Postdoctoral Fellowship
+  dates: 2026–2028
+  description: >-
+    QHyperSTAR brings these three research directions together. It lays the foundations of quantitative hyperproperties—specifications that map system implementations to numerical values by relating their executions—through a semantic classification, an expressive specification language, and memory-efficient monitoring algorithms.
+  record: https://cordis.europa.eu/project/id/101276381

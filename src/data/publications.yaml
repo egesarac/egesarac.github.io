@@ -1,0 +1,260 @@
+# ─────────────────────────────────────────────────────────────
+# Publications, newest first. Each entry needs at least one topic
+# from publication-topics.yaml; the page groups by year or topic.
+#
+# Fields:
+#   title    required
+#   authors  required — your own name is emphasized automatically
+#   venue    full venue name (or "PhD Thesis, …")
+#   short    optional acronym shown as a tag: CONCUR, CAV, LMCS, …
+#   year     required (number)
+#   kind     conference | journal | thesis
+#   topics   required list of IDs from publication-topics.yaml
+#   volume   optional journal volume (number)
+#   issue    optional journal issue (number); requires volume
+#   note     optional — "invited paper", "invited to LMCS special issue", …
+#   links    optional list of { label, url }; pdf, code, doi, slides, …
+#   selected optional { order, summary } — homepage position and contribution sentence
+# ─────────────────────────────────────────────────────────────
+
+- title: Monitoring Discounted Sum Properties
+  authors: Filip Cano, Thomas A. Henzinger, Konstantin Kueffner, and N. Ege Saraç
+  venue: International Conference on Concurrency Theory
+  short: CONCUR
+  year: 2026
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/concur26.pdf
+    - label: code
+      url: https://github.com/filipcano/monitoring-discounted-sum-properties
+
+- title: Extending QuAK with Nested Quantitative Automata
+  authors: Thomas A. Henzinger, Nicolas Mazzocchi, N. Ege Saraç*, and Harun Yılmaz
+  venue: International Conference on Computer Aided Verification
+  short: CAV
+  year: 2026
+  kind: conference
+  topics: [quantitative-verification, model-checking]
+  selected:
+    order: 1
+    summary: >-
+      We enable our tool Quantitative Automata Kit (QuAK) to automatically analyze performance measures whose values can grow arbitrarily large, such as response times.
+  links:
+    - label: pdf
+      url: /files/cav26.pdf
+    - label: code
+      url: https://github.com/ista-vamos/nested-quak
+
+- title: Quantitative Monitoring of Signal First-Order Logic
+  authors: Marek Chalupa, Thomas A. Henzinger, N. Ege Saraç*, and Emily Yu
+  venue: International Symposium on Formal Methods
+  short: FM
+  year: 2026
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/fm26.pdf
+    - label: code
+      url: https://github.com/ista-vamos/artifact-fm-qsfo
+
+- title: A Monitoring-Oriented Theory and Classification of Quantitative Specifications
+  authors: N. Ege Saraç*
+  venue: PhD Thesis, Institute of Science and Technology Austria (ISTA)
+  year: 2025
+  kind: thesis
+  topics: [quantitative-verification, runtime-monitoring, model-checking]
+  note: Nominated for the ISTA Outstanding PhD Thesis Award
+  links:
+    - label: pdf
+      url: /files/phdThesis_egesarac.pdf
+    - label: proposal
+      url: /files/proposal21.pdf
+
+- title: Quantitative Language Automata
+  authors: Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Concurrency Theory
+  short: CONCUR
+  year: 2025
+  kind: conference
+  topics: [hyperproperties, quantitative-verification, model-checking]
+  note: Invited to LMCS special issue
+  selected:
+    order: 2
+    summary: >-
+      We introduce the first dedicated specification language for quantitative hyperproperties, which assign values to sets or probability distributions of infinite executions.
+  links:
+    - label: pdf
+      url: /files/concur25.pdf
+
+- title: Safety and Liveness of Quantitative Properties and Automata
+  authors: Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: Logical Methods in Computer Science
+  short: LMCS
+  year: 2025
+  kind: journal
+  topics: [quantitative-verification]
+  volume: 21
+  issue: 2
+  selected:
+    order: 3
+    summary: >-
+      We generalize the safety-liveness classification to quantitative properties and give decision procedures and decomposition algorithms for quantitative automata.
+  links:
+    - label: pdf
+      url: /files/lmcs25.pdf
+
+- title: Automating the Analysis of Quantitative Automata with QuAK
+  authors: Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems
+  short: TACAS
+  year: 2025
+  kind: conference
+  topics: [quantitative-verification, model-checking]
+  links:
+    - label: pdf
+      url: /files/tacas25.pdf
+    - label: code
+      url: https://github.com/ista-vamos/QuAK
+
+- title: "QuAK: Quantitative Automata Kit"
+  authors: Marek Chalupa, Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Symposium on Leveraging Applications of Formal Methods
+  short: ISoLA
+  year: 2024
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring, model-checking]
+  note: Invited paper
+  links:
+    - label: pdf
+      url: /files/isola24.pdf
+    - label: code
+      url: https://github.com/ista-vamos/QuAK
+
+- title: "Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed and Accuracy"
+  authors: Borzoo Bonakdarpour, Anik Momtaz, Dejan Ničković, and N. Ege Saraç*
+  venue: International Conference on Runtime Verification
+  short: RV
+  year: 2024
+  kind: conference
+  topics: [runtime-monitoring]
+  note: Invited to STTT special issue
+  selected:
+    order: 5
+    summary: >-
+      We accelerate the monitoring of distributed systems with bounded clock skew using sound approximations that achieve speedups of up to five orders of magnitude.
+  links:
+    - label: pdf
+      url: /files/rv24.pdf
+    - label: code
+      url: https://github.com/egesarac/ApxDistMon
+
+- title: "Strategic Dominance: A New Preorder for Nondeterministic Processes"
+  authors: Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Concurrency Theory
+  short: CONCUR
+  year: 2024
+  kind: conference
+  topics: [quantitative-verification, model-checking]
+  links:
+    - label: pdf
+      url: /files/concur24.pdf
+
+- title: Safety and Liveness of Quantitative Automata
+  authors: Udi Boker, Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Concurrency Theory
+  short: CONCUR
+  year: 2023
+  kind: conference
+  topics: [quantitative-verification]
+  note: Invited to LMCS special issue
+  links:
+    - label: pdf
+      url: /files/concur23.pdf
+
+- title: Regular Methods for Operator Precedence Languages
+  authors: Thomas A. Henzinger, Pavol Kebis, Nicolas Mazzocchi, and N. Ege Saraç
+  venue: International Colloquium on Automata, Languages and Programming
+  short: ICALP
+  year: 2023
+  kind: conference
+  topics: [model-checking]
+  links:
+    - label: pdf
+      url: /files/icalp23.pdf
+
+- title: Quantitative Safety and Liveness
+  authors: Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Foundations of Software Science and Computation Structures
+  short: FoSSaCS
+  year: 2023
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/fossacs23.pdf
+
+- title: Abstract Monitors for Quantitative Specifications
+  authors: Thomas A. Henzinger, Nicolas Mazzocchi, and N. Ege Saraç*
+  venue: International Conference on Runtime Verification
+  short: RV
+  year: 2022
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/rv22.pdf
+
+- title: Quantitative and Approximate Monitoring
+  authors: Thomas A. Henzinger and N. Ege Saraç*
+  venue: Symposium on Logic in Computer Science
+  short: LICS
+  year: 2021
+  kind: conference
+  topics: [quantitative-verification, runtime-monitoring]
+  selected:
+    order: 4
+    summary: >-
+      We develop a theory of quantitative runtime monitoring that formalizes how monitors estimate property values from finite observations.
+  links:
+    - label: pdf
+      url: /files/lics21.pdf
+
+- title: Boosting Expensive Synchronizing Heuristics
+  authors: N. Ege Saraç*, Ömer Faruk Altun, Kamil Tolga Atam, Sertaç Karahoda, Kamer Kaya, and Hüsnü Yenigün
+  venue: Expert Systems with Applications
+  short: ESWA
+  year: 2021
+  kind: journal
+  topics: [model-based-testing]
+  volume: 167
+  links:
+    - label: pdf
+      url: /files/eswa21.pdf
+    - label: code
+      url: https://bitbucket.org/egesarac/boostexpsyncheur
+
+- title: Monitorability Under Assumptions
+  authors: Thomas A. Henzinger and N. Ege Saraç*
+  venue: International Conference on Runtime Verification
+  short: RV
+  year: 2020
+  kind: conference
+  topics: [runtime-monitoring]
+  note: Invited paper
+  links:
+    - label: pdf
+      url: /files/rv20.pdf
+
+- title: A Theory of Register Monitors
+  authors: Thomas Ferrère, Thomas A. Henzinger, and N. Ege Saraç
+  venue: Symposium on Logic in Computer Science
+  short: LICS
+  year: 2018
+  kind: conference
+  topics: [runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/lics18.pdf

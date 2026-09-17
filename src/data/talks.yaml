@@ -1,0 +1,101 @@
+# ─────────────────────────────────────────────────────────────
+# Talks, grouped by title, ordered by first delivery (newest first).
+# Deliveries within each group are newest first.
+# `slides` belongs to the topic; venue `url` is optional.
+# ─────────────────────────────────────────────────────────────
+
+- title: Extending QuAK with Nested Quantitative Automata
+  slides: /files/slides/quak.pdf
+  given:
+    - at: 38th Intl. Conf. on Computer Aided Verification (CAV)
+      url: https://conferences.i-cav.org/2026/
+      when: Jul '26
+
+- title: Quantitative Monitoring of Signal First-Order Logic
+  slides: /files/slides/qmsfol.pdf
+  given:
+    - at: AIT Center for Digital Safety & Security Seminar Series
+      url: https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security
+      when: Jun '26
+    - at: 27th Intl. Symp. on Formal Methods (FM)
+      url: https://conf.researchr.org/home/fm-2026
+      when: May '26
+
+- title: Quantitative Language Automata
+  slides: /files/slides/qla.pdf
+  given:
+    - at: 19th Intl. Conf. on Reachability Problems (RP)
+      url: https://rp25.software.imdea.org/
+      when: Oct '25
+    - at: 36th Intl. Conf. on Concurrency Theory (CONCUR)
+      url: https://conferences.au.dk/confest2025/concur
+      when: Aug '25
+
+- title: Approximate Distributed Monitoring under Partial Synchrony
+  slides: /files/slides/admups.pdf
+  given:
+    - at: 24th Intl. Conf. on Runtime Verification (RV)
+      url: https://cmpe.bogazici.edu.tr/rv24/
+      when: Oct '24
+    - at: AIT Center for Digital Safety & Security Seminar Series
+      url: https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security
+      when: Oct '24
+
+- title: Safety and Liveness of Quantitative Properties and Automata
+  slides: /files/slides/slqpa.pdf
+  given:
+    - at: RWTH Aachen Software Modeling and Verification Group Seminar Series
+      url: https://moves.rwth-aachen.de/
+      when: Mar '25
+    - at: CISPA Reactive Systems Group Seminar Series
+      url: https://finkbeiner.groups.cispa.de/
+      when: Feb '25
+    - at: TU Dresden Algebraic and Logical Foundations of Computer Science Seminar Series
+      url: https://iccl.inf.tu-dresden.de/web/Algebraische_und_logische_Grundlagen_der_Informatik/en
+      when: Jan '25
+    - at: 18th Intl. Conf. on Reachability Problems (RP)
+      url: https://easychair.org/smart-program/RP24/
+      when: Sep '24
+    - at: TU Wien CPS Research Unit Seminar Series
+      url: https://informatics.tuwien.ac.at/orgs/e191-01
+      when: Sep '24
+    - at: 16th Alpine Verification Meeting
+      url: https://avm2024.informatik.uni-freiburg.de/
+      when: Sep '24
+    - at: DEVINE Research Team (Inria and IRISA) Formal Methods Seminar
+      url: https://devine.inria.fr/
+      when: Jun '24
+    - at: AIT Center for Digital Safety & Security Seminar Series
+      url: https://www.ait.ac.at/en/about-the-ait/center/center-for-digital-safety-security
+      when: Oct '23
+    - at: 26th Intl. Conf. on Foundations of Software Science and Computation Structures (FoSSaCS)
+      url: https://etaps.org/2023/
+      when: Apr '23
+
+- title: Advancing the Theory of Quantitative and Approximate Monitoring
+  slides: /files/slides/atqam.pdf
+  given:
+    - at: FBK Embedded Systems Seminar Series
+      url: https://es.fbk.eu/
+      when: Sep '22
+    - at: IMT Lucca It-Matters Seminar Series
+      url: http://itmatters.imtlucca.it/
+      when: Apr '22
+
+- title: Quantitative and Approximate Monitoring
+  slides: /files/slides/qam.pdf
+  video: https://www.youtube.com/watch?v=ZIDE6GltJdg
+  given:
+    - at: 36th Ann. ACM/IEEE Symp. on Logic in Computer Science (LICS)
+      url: https://lics.siglog.org/2021/index.html
+      when: Jun '21
+    - at: ISTA & TU Wien FORSYTE Joint Seminar Series
+      url: https://forsyte.at/
+      when: Jun '21
+
+- title: Monitorability Under Assumptions
+  slides: /files/slides/mua.pdf
+  given:
+    - at: ISTA & TU Wien FORSYTE Joint Seminar Series
+      url: https://forsyte.at/
+      when: Dec '20

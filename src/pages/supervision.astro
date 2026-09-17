@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { site, supervision } from '../lib/data';
+import { md } from '../lib/md';
+
+const description = `Thesis opportunities, research supervision, and mentoring — ${site.name}.`;
+---
+
+<Base title="Supervision" description={description} contentStyles>
+  <section aria-labelledby="supervision-heading">
+    <h1 id="supervision-heading" class="label">Supervision</h1>
+
+    <div class="prose">
+      {supervision.intro.map((paragraph) => (
+        <p set:html={md(paragraph)} />
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="projects-heading">
+    <h2 id="projects-heading" class="label">Supervised projects</h2>
+
+    {supervision.projects.map((entry) => (
+      <article class="entry">
+        <div class="entry-heading">
+          <h3>{entry.project}</h3>
+          {entry.links && (
+            <span class="resource-links entry-resource">
+              {entry.links.map((link) => (
+                <ResourceLink href={link.url} label={link.label} ariaLabel={`${link.label} for ${entry.project}`} />
+              ))}
+            </span>
+          )}
+        </div>
+        <p class="where">
+          {entry.student} · {entry.type} · {entry.role} at <em>{entry.where}</em>
+          <span class="when">· {entry.when}</span>
+        </p>
+        {entry.detail && <p class="detail" set:html={md(entry.detail)} />}
+      </article>
+    ))}
+  </section>
+
+  <section aria-labelledby="mentoring-heading">
+    <h2 id="mentoring-heading" class="label">Mentoring</h2>
+
+    {supervision.mentoring.map((entry) => (
+      <article class="entry">
+        <h3>{entry.title}</h3>
+        <p class="where">
+          {entry.role} at <em>{entry.where}</em>
+          <span class="when">· {entry.when}</span>
+        </p>
+        <p class="detail" set:html={md(entry.detail)} />
+      </article>
+    ))}
+  </section>
+</Base>

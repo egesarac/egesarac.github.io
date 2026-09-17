@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { teaching, site } from '../lib/data';
+
+const description = `Teaching experience — ${site.name}.`;
+---
+
+<Base title="Teaching" description={description} contentStyles>
+  <h1 class="label">Teaching</h1>
+
+  {teaching.map((entry) => (
+    <article class="entry">
+      <div class="entry-heading">
+        <h2>{entry.course}</h2>
+        {entry.links && (
+          <span class="resource-links entry-resource">
+            {entry.links.map((link) => (
+              <ResourceLink href={link.url} label={link.label} ariaLabel={`${entry.course} ${link.label === 'info' ? 'information' : link.label}`} />
+            ))}
+          </span>
+        )}
+      </div>
+      <p class="where">
+        {entry.role} at <em>{entry.org}</em>
+        <span class="when">· {entry.when}</span>
+      </p>
+    </article>
+  ))}
+</Base>

@@ -1,0 +1,18 @@
+# Topic order controls the publication page's topic view.
+# Additional topics appear together below the main research themes.
+- id: hyperproperties
+  title: Hyperproperties
+
+- id: quantitative-verification
+  title: Quantitative Verification
+
+- id: runtime-monitoring
+  title: Runtime Monitoring
+
+- id: model-checking
+  title: Model Checking
+  additional: true
+
+- id: model-based-testing
+  title: Model-Based Testing
+  additional: true

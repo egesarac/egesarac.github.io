@@ -1,0 +1,70 @@
+---
+interface Props {
+  name: string;
+  pronunciation: string;
+}
+
+const { name, pronunciation } = Astro.props;
+---
+
+<name-pronunciation class="pronunciation">
+  <button
+    class="pronunciation-toggle"
+    type="button"
+    aria-label={`How to pronounce ${name}`}
+    aria-describedby="name-pronunciation-guide"
+  >
+    <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 11.5a8 8 0 0 1-8 8 8.5 8.5 0 0 1-3.5-.8L4 20l1.3-4.5a8.5 8.5 0 0 1-.8-3.5 8 8 0 0 1 8-8 7.5 7.5 0 0 1 7.5 7.5Z"></path>
+        <path d="M8.5 9.5h7M8.5 13h4.5"></path>
+      </g>
+    </svg>
+  </button>
+  <span class="pronunciation-tooltip" id="name-pronunciation-guide" role="tooltip">
+    <span class="pronunciation-label">Approximately pronounced</span>
+    <span class="pronunciation-text">{pronunciation}</span>
+  </span>
+</name-pronunciation>
+
+<script>
+  class NamePronunciation extends HTMLElement {
+    private controller?: AbortController;
+
+    connectedCallback() {
+      this.controller = new AbortController();
+      const { signal } = this.controller;
+      const button = this.querySelector('button');
+      const reset = () => delete this.dataset.dismissed;
+      const dismiss = () => {
+        delete this.dataset.open;
+        this.dataset.dismissed = '';
+      };
+
+      this.addEventListener('pointerenter', reset, { signal });
+      this.addEventListener('focusin', reset, { signal });
+      this.addEventListener('focusout', dismiss, { signal });
+      button?.addEventListener('click', () => {
+        if (this.hasAttribute('data-open')) {
+          dismiss();
+        } else {
+          reset();
+          this.dataset.open = '';
+        }
+      }, { signal });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') dismiss();
+      }, { signal });
+      document.addEventListener('pointerdown', (event) => {
+        if (event.target instanceof Node && !this.contains(event.target)) dismiss();
+      }, { signal });
+    }
+
+    disconnectedCallback() {
+      this.controller?.abort();
+    }
+  }
+
+  customElements.define('name-pronunciation', NamePronunciation);
+</script>

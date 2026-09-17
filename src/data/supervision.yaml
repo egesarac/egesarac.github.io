@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────
+# Student supervision and mentoring. Supervision is listed by
+# project, newest first; project links and details are optional.
+# ─────────────────────────────────────────────────────────────
+
+intro:
+  - >-
+    I co-supervise Bachelor's and Master's theses at
+    TUM on topics related to [my
+    research](/research/), with projects ranging from mathematical
+    foundations to tool development.
+  - >-
+    If you're interested, please [email me](mailto:ege.sarac@cispa.de) with a
+    few sentences about what you'd like to explore, and we can find a
+    direction together.
+
+projects:
+  - project: Extending QuAK with Nested Quantitative Automata
+    student: Harun Yılmaz
+    type: Internship
+    role: Co-supervisor
+    where: Thomas Henzinger Group, ISTA
+    when: "2025"
+    detail: Published at CAV 2026.
+    links:
+      - label: paper
+        url: /files/cav26.pdf
+      - label: code
+        url: https://github.com/ista-vamos/nested-quak
+
+  - project: Quantitative Language Automata
+    student: Pavol Kebis
+    type: Rotation
+    role: Co-supervisor
+    where: Thomas Henzinger Group, ISTA
+    when: "2024"
+    detail: >-
+      Published at CONCUR 2025 and invited to an LMCS special issue.
+    links:
+      - label: paper
+        url: /files/concur25.pdf
+
+  - project: Regular Methods for Operator Precedence Languages
+    student: Pavol Kebis
+    type: Internship
+    role: Co-supervisor
+    where: Thomas Henzinger Group, ISTA
+    when: "2022"
+    detail: Published at ICALP 2023.
+    links:
+      - label: paper
+        url: /files/icalp23.pdf
+
+mentoring:
+  - title: Graduate School Welcome Event
+    role: Alumni speaker
+    where: ISTA
+    when: "2025"
+    detail: >-
+      Gave a talk on *Five Things I Wish I Had Known Earlier in My PhD* to
+      incoming graduate students at ISTA.
+
+  - title: Incoming PhD Student Mentoring
+    role: Student mentor
+    where: ISTA
+    when: "2023, 2020"
+    detail: >-
+      Mentored three incoming PhD students across cohorts as they transitioned into ISTA's
+      graduate program.

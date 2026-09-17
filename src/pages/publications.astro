@@ -1,0 +1,224 @@
+---
+import Base from '../layouts/Base.astro';
+import PubEntry from '../components/PubEntry.astro';
+import { publications, publicationsByYear, publicationsByTopic, site } from '../lib/data';
+
+const yearGroups = publicationsByYear();
+const topicGroups = publicationsByTopic();
+const mainTopics = topicGroups.filter((group) => !group.additional);
+const additionalTopics = topicGroups.filter((group) => group.additional);
+const hasOverlappingTopics = publications.some((pub) => pub.topics.length > 1);
+const hasStar = publications.some((pub) => pub.authors.includes('*'));
+const description = `Publications by ${site.name} on hyperproperties, quantitative verification, and runtime monitoring.`;
+---
+
+<Base title="Publications" description={description} contentStyles>
+  <header class="publications-header">
+    <h1 class="label">Publications</h1>
+    <fieldset class="publication-views" hidden>
+      <legend class="visually-hidden">Group publications</legend>
+      <label>
+        <input type="radio" name="publication-view" value="year" aria-controls="publications-by-year" checked />
+        <span>By year</span>
+      </label>
+      <label>
+        <input type="radio" name="publication-view" value="topic" aria-controls="publications-by-topic" />
+        <span>By topic</span>
+      </label>
+    </fieldset>
+  </header>
+
+  <div id="publications-by-year" class="publication-view" data-publication-view="year">
+    {yearGroups.map((group) => (
+      <div class="pub-year">
+        <h2>{group.year}</h2>
+        <div class="pub-list">
+          {group.entries.map((pub) => <PubEntry pub={pub} />)}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div id="publications-by-topic" class="publication-view" data-publication-view="topic" hidden>
+    {hasOverlappingTopics && (
+      <p class="publication-topic-note">Some publications appear under more than one topic.</p>
+    )}
+    {mainTopics.map((group) => (
+      <section class="pub-topic" aria-labelledby={`topic-${group.id}`}>
+        <h2 id={`topic-${group.id}`}>{group.title}</h2>
+        <div class="pub-list">
+          {group.entries.map((pub) => <PubEntry pub={pub} showYear />)}
+        </div>
+      </section>
+    ))}
+    {additionalTopics.length > 0 && (
+      <section class="additional-topics" aria-labelledby="additional-topics-label">
+        <p class="additional-topics-label" id="additional-topics-label">Additional Topics</p>
+        {additionalTopics.map((group) => (
+          <section class="pub-topic pub-topic-additional" aria-labelledby={`topic-${group.id}`}>
+            <h2 id={`topic-${group.id}`}>{group.title}</h2>
+            <div class="pub-list">
+              {group.entries.map((pub) => <PubEntry pub={pub} showYear />)}
+            </div>
+          </section>
+        ))}
+      </section>
+    )}
+  </div>
+
+  {hasStar && (
+    <p class="pub-foot"><span class="star">*</span> first or corresponding author</p>
+  )}
+</Base>
+
+<script>
+  const controls = document.querySelector<HTMLFieldSetElement>('.publication-views');
+  const panels = document.querySelectorAll<HTMLElement>('[data-publication-view]');
+
+  if (controls && panels.length === 2) {
+    const options = controls.querySelectorAll<HTMLInputElement>('input[name="publication-view"]');
+
+    const selectView = (view: 'year' | 'topic') => {
+      for (const panel of panels) {
+        panel.hidden = panel.dataset.publicationView !== view;
+      }
+      for (const option of options) {
+        option.checked = option.value === view;
+      }
+    };
+
+    controls.addEventListener('change', (event) => {
+      const option = event.target;
+      if (option instanceof HTMLInputElement && option.checked &&
+          (option.value === 'year' || option.value === 'topic')) {
+        selectView(option.value);
+      }
+    });
+
+    // A fresh visit always starts by year, including restored radio state on reload.
+    // Reveal the switch only after it works; the static bibliography needs no script.
+    selectView('year');
+    controls.hidden = false;
+  }
+</script>
+
+<style>
+  .publications-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0 1.5rem;
+    margin-bottom: var(--space-paragraph);
+  }
+
+  .publications-header .label {
+    margin: 0;
+  }
+
+  .publication-views {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .publication-views label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding-inline: 0.125rem;
+    cursor: pointer;
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+
+  .visually-hidden,
+  .publication-views input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .publication-views label:hover {
+    color: var(--accent);
+  }
+
+  .publication-views input:checked + span {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--link);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3em;
+  }
+
+  .publication-views label:has(input:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  .publication-topic-note {
+    margin: 0 0 var(--space-entry);
+    color: var(--ink-soft);
+    font-size: var(--type-small);
+    font-style: italic;
+  }
+
+  .pub-topic + .pub-topic {
+    margin-top: var(--space-group);
+  }
+
+  .pub-topic > h2 {
+    margin: 0 0 var(--space-paragraph);
+    font-family: var(--sans);
+    font-size: var(--type-label);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .publication-view > .pub-topic > h2 {
+    margin-bottom: calc(var(--space-paragraph) * 1.5);
+    color: var(--ink-soft);
+  }
+
+  .additional-topics {
+    margin-top: var(--space-group);
+    padding-top: var(--space-entry);
+    border-top: 1px solid var(--hairline);
+  }
+
+  .additional-topics-label {
+    margin: 0 0 var(--space-entry);
+    color: var(--ink-soft);
+    font-family: var(--sans);
+    font-size: 0.85rem;
+  }
+
+  .pub-topic-additional > h2 {
+    font-size: var(--type-copy);
+    color: var(--ink-soft);
+  }
+
+  .publication-views[hidden],
+  .publication-view[hidden] {
+    display: none !important;
+  }
+
+  @media print {
+    .publication-views {
+      display: none;
+    }
+  }
+</style>

@@ -1,0 +1,847 @@
+/* ────────────────────────────────────────────────────────────
+   N. Ege Saraç — design tokens
+
+   Libertinus Serif for text (the CV's own family), Libre
+   Franklin for the masthead and headings, Fragment Mono for
+   data tags. Navy accent and link blue carry over from the CV;
+   dark-mode colors are lighter tints of the same palette.
+   ──────────────────────────────────────────────────────────── */
+
+:root {
+  --paper: #fdfdfd;
+  --ink: #16181a;
+  --ink-soft: #4a4f55;
+  --ink-faint: #6a6f75;
+  --hairline: #c7cacf;
+  /* Use for essential interactive boundaries; --hairline stays decorative. */
+  --control-border: #858a90;
+  --accent: #1b3a5c;
+  --link: #17558f;
+
+  --serif: 'Libertinus Serif', 'Times New Roman', Georgia, serif;
+  --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'Fragment Mono', ui-monospace, 'Courier New', monospace;
+
+  --measure: 48rem;
+
+  /* Approved content typography and vertical spacing. */
+  --type-label: 1.25rem;
+  --type-title: 1.0625rem;
+  --type-copy: 1.125rem;
+  --type-small: 1rem;
+  --type-mono: 0.9375rem;
+  --space-detail: 0.25rem;    /* 4px: tightly related metadata or date → text */
+  --space-title: 0.4375rem;   /* 7px: entry title → first content */
+  --space-record: 0.625rem;   /* 10px: separate news items */
+  --space-paragraph: 0.875rem; /* 14px: paragraphs, labels, and card rows */
+  --space-entry: 1.75rem;     /* 28px: peer entries */
+  --space-group: 2.625rem;    /* 42px: sections and publication years */
+
+  color-scheme: light dark;
+}
+
+/* Dark tokens apply when the user toggled dark explicitly, or when
+   the system prefers dark and no explicit light choice overrides it.
+   The two blocks must stay identical. */
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #16181b;
+  --ink: #e6e9ec;
+  --ink-soft: #abb0b6;
+  --ink-faint: #838990;
+  --hairline: #3a3e43;
+  --control-border: #686d73;
+  --accent: #8ab4da;
+  --link: #8ab4da;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #16181b;
+    --ink: #e6e9ec;
+    --ink-soft: #abb0b6;
+    --ink-faint: #838990;
+    --hairline: #3a3e43;
+    --control-border: #686d73;
+    --accent: #8ab4da;
+    --link: #8ab4da;
+
+    color-scheme: dark;
+  }
+}
+
+/* ── base ─────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.17rem;
+  line-height: 1.52;
+  font-feature-settings: 'liga', 'kern';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.skip {
+  position: absolute;
+  left: -100vw;
+  top: 0;
+  padding: 0.5rem 0.9rem;
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
+.skip:focus-visible {
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 10;
+}
+
+/* ── links ────────────────────────────────────────────────── */
+
+/* Links are quiet: color carries the affordance, the underline
+   appears on hover and keyboard focus. */
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+/* ── the mark ─────────────────────────────────────────────── */
+
+.mark {
+  color: var(--accent);
+  flex: none;
+}
+
+/* ── header ───────────────────────────────────────────────── */
+
+.site-head {
+  padding-block: 1.7rem 1.3rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 3rem;
+}
+
+.site-head .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--sans);
+  font-size: 0.94rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand .mark {
+  translate: 0 0.1rem;
+}
+
+.brand:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.15rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.site-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a[aria-current='page'] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--link);
+  text-underline-offset: 0.3em;
+}
+
+/* theme toggle — crescent in light mode, sun in dark; the pair
+   follows the explicit choice first, the system preference otherwise */
+
+.theme-toggle {
+  margin: 0;
+  padding: 0.15rem;
+  border: 0;
+  background: none;
+  color: var(--ink-faint);
+  cursor: pointer;
+  line-height: 0;
+  align-self: center;
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+}
+
+.theme-toggle svg {
+  display: block;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-toggle .icon-moon {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-toggle .icon-sun {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .theme-toggle .icon-moon {
+    display: none;
+  }
+
+  :root:not([data-theme='light']) .theme-toggle .icon-sun {
+    display: block;
+  }
+}
+
+/* ── section labels & page titles ─────────────────────────── */
+
+.label {
+  margin: 0 0 var(--space-paragraph);
+  font-family: var(--sans);
+  font-size: var(--type-label);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+main {
+  min-height: 55vh;
+}
+
+/* Main pages opt in through Base's contentStyles prop. */
+.site-content {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+}
+
+/* Section containers own the gap, so child margins cannot escape or combine. */
+.site-content > section {
+  display: flow-root;
+}
+
+.site-content > section + section {
+  margin-top: var(--space-group);
+}
+
+/* ── home: hero ───────────────────────────────────────────── */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+  margin-bottom: var(--space-group);
+}
+
+.hero h1 {
+  margin: 0 0 var(--space-title);
+  font-family: var(--sans);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.hero .role {
+  margin: 0;
+  max-width: 34rem;
+  color: var(--ink-soft);
+}
+
+.hero-name {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 0.375rem;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.pronunciation {
+  display: inline-flex;
+  flex: none;
+}
+
+.pronunciation-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-faint);
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.pronunciation-toggle:hover,
+.pronunciation-toggle:focus-visible {
+  color: var(--accent);
+}
+
+.pronunciation-tooltip {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 5;
+  width: max-content;
+  max-width: min(19rem, 100%);
+  padding: 0.625rem 0.875rem;
+  border: 1px solid var(--control-border);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Bridge the gap so the guide remains open as the pointer moves onto it. */
+.pronunciation-tooltip::before {
+  content: '';
+  position: absolute;
+  inset: -0.75rem -1px auto;
+  height: 0.75rem;
+}
+
+.pronunciation:is(:hover, :focus-within, [data-open]):not([data-dismissed]) .pronunciation-tooltip {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.pronunciation-label,
+.pronunciation-text {
+  display: block;
+}
+
+.pronunciation-label {
+  margin-bottom: 0.125rem;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
+.portrait {
+  width: 10rem;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+}
+
+@media (max-width: 34rem) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: var(--space-entry) 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ── metadata rows (contact, footer) ──────────────────────── */
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.6rem;
+  align-items: baseline;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.88em;
+  color: var(--ink-soft);
+}
+
+.meta-row li + li::before {
+  content: '·';
+  margin-right: 0.6rem;
+  color: var(--ink-faint);
+}
+
+.hero .meta-row {
+  margin-top: var(--space-paragraph);
+  row-gap: var(--space-detail);
+  font-size: var(--type-small);
+  line-height: 1.5;
+}
+
+/* ── prose ────────────────────────────────────────────────── */
+
+.prose {
+  /* Paragraphs keep a book-like measure even when the page is wider. */
+  max-width: 41.5rem;
+}
+
+.prose p {
+  margin: 0;
+}
+
+.prose p + p {
+  margin-top: var(--space-paragraph);
+}
+
+/* ── railed rows (news, talks) ────────────────────────────── */
+
+.rail {
+  display: grid;
+  grid-template-columns: 5.6rem 1fr;
+  column-gap: 1.1rem;
+  row-gap: var(--space-record);
+  margin: 0;
+}
+
+.rail dt,
+.rail dd {
+  margin: 0;
+  padding-block: 0;
+}
+
+.rail dt {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 34rem) {
+  .rail {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-detail);
+  }
+
+  .rail dt:not(:first-child) {
+    margin-top: calc(var(--space-record) - var(--space-detail));
+  }
+}
+
+/* ── publications ─────────────────────────────────────────── */
+
+.pub-year {
+  display: grid;
+  grid-template-columns: 5.6rem 1fr;
+  column-gap: 1.1rem;
+}
+
+.pub-year + .pub-year {
+  margin-top: var(--space-group);
+}
+
+.pub-year > h2 {
+  margin: 0;
+  font-size: var(--type-copy);
+  font-weight: 400;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  padding-top: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-list {
+  display: grid;
+  row-gap: var(--space-entry);
+}
+
+.pub h3 {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-title);
+  font-weight: 600;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.resource-links {
+  font-family: var(--mono);
+  font-size: var(--type-mono);
+  line-height: 1.35;
+}
+
+.resource-link {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.resource-bracket {
+  color: var(--ink-faint);
+}
+
+.resource-links a {
+  margin-right: 0.45rem;
+  color: var(--link);
+  white-space: nowrap;
+}
+
+.resource-links a:hover,
+.resource-links a:focus-visible {
+  color: var(--accent);
+}
+
+.pub p {
+  margin: 0;
+}
+
+.pub p + p {
+  margin-top: var(--space-detail);
+}
+
+.pub-authors {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.pub-authors .me {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.pub-authors .star {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pub-venue {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.pub-venue .where {
+  font-style: italic;
+}
+
+.pub-venue .tag {
+  font-family: var(--mono);
+  font-size: var(--type-mono);
+  line-height: 1.35;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.pub-note {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.pub-foot {
+  margin: var(--space-entry) 0 0;
+  font-size: var(--type-small);
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+
+.pub-foot .star {
+  color: var(--accent);
+}
+
+@media (max-width: 34rem) {
+  .pub-year {
+    grid-template-columns: 1fr;
+    row-gap: var(--space-paragraph);
+  }
+}
+
+/* ── entry lists (talks, teaching, supervision) ────────────── */
+
+.entry + .entry {
+  margin-top: var(--space-entry);
+}
+
+.entry > h3,
+.entry-title,
+.entry-heading > h2,
+.entry-heading > h3 {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-title);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* Appearances are details of one talk; this also sets their mobile record gap. */
+.entry .rail {
+  --space-record: var(--space-detail);
+}
+
+.entry p {
+  margin: 0;
+}
+
+/* The heading owns no trailing margin; the first content sets the gap. */
+.entry-heading + p,
+.entry-heading + .rail,
+.entry > h3 + p {
+  margin-top: var(--space-title);
+}
+
+.entry p + p {
+  margin-top: var(--space-detail);
+}
+
+.entry-heading {
+  --title-resource-gap: 0.35rem;
+  --resource-gap: 0;
+
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-detail) var(--title-resource-gap);
+  margin-bottom: 0;
+  font-size: var(--type-title);
+  line-height: 1.35;
+}
+
+.entry-heading .entry-resource {
+  display: inline-flex;
+  align-items: baseline;
+  flex: none;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: var(--space-detail) var(--resource-gap);
+  font-size: var(--type-mono);
+  line-height: 1.35;
+}
+
+.entry-heading .entry-resource a {
+  margin-right: 0;
+}
+
+.pub-heading {
+  display: block;
+  text-wrap: pretty;
+}
+
+.pub-heading > h3 {
+  display: inline;
+}
+
+.pub-heading .entry-resource {
+  margin-inline-start: var(--title-resource-gap);
+  white-space: nowrap;
+}
+
+.entry .where {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.entry .where em {
+  color: var(--ink-soft);
+}
+
+.entry .when {
+  color: var(--ink-soft);
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+.entry .detail {
+  font-size: var(--type-copy);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 38rem;
+}
+
+/* ── footer ───────────────────────────────────────────────── */
+
+.site-foot {
+  margin-top: 4.5rem;
+  border-top: 1px solid var(--hairline);
+  padding-block: 2rem 3rem;
+}
+
+.site-foot .meta-row {
+  margin-top: 0;
+}
+
+.colophon {
+  margin: 0.9rem 0 0;
+  font-size: 0.82em;
+  color: var(--ink-faint);
+}
+
+/* ── 404 ──────────────────────────────────────────────────── */
+
+.lost {
+  padding-block: 16vh 4rem;
+  text-align: center;
+}
+
+.lost h1 {
+  margin: 1.4rem 0 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.lost p {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--ink-soft);
+}
+
+/* ── home: selected publications ────────────────────────────
+   Title, venue, and resources share a wrapping header. The venue uses the
+   archive's tag style; authors and contribution stay on the next two rows. */
+
+.selected-pub-list {
+  display: grid;
+  gap: var(--space-entry);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.selected-pub-heading {
+  font-size: var(--type-title);
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.selected-pub h3 {
+  display: inline;
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-title);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.selected-pub p {
+  margin: 0;
+}
+
+.selected-pub .pub-authors {
+  margin-top: var(--space-title);
+}
+
+.selected-pub-venue {
+  white-space: nowrap;
+}
+
+.selected-pub-venue abbr {
+  text-decoration: none;
+}
+
+.selected-pub .selected-pub-summary {
+  margin-top: var(--space-detail);
+  max-width: 41.5rem;
+}
+
+.selected-pub-links a {
+  display: inline-block;
+  margin: 0;
+  padding-block: 0.125rem;
+  color: var(--link);
+}
+
+/* ── quality floor ────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media print {
+  .site-nav,
+  .site-foot,
+  .skip,
+  .pronunciation {
+    display: none;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,0 +1,10 @@
+---
+import { site } from '../lib/data';
+---
+
+<ul class="meta-row">
+  <li>{site.location}</li>
+  {site.links.map((link) => (
+    <li><a href={link.url}>{link.label}</a></li>
+  ))}
+</ul>

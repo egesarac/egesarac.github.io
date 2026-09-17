@@ -1,0 +1,40 @@
+---
+import ResourceLink from './ResourceLink.astro';
+import { authors } from '../lib/md';
+import type { Publication } from '../lib/data';
+
+interface Props {
+  pub: Publication;
+  showYear?: boolean;
+}
+
+const { pub, showYear = false } = Astro.props;
+
+// Venues are stored under their full names; the boilerplate is
+// abbreviated only at display time.
+const venue = pub.venue
+  .replace('International Conference', 'Intl. Conf.')
+  .replace('International Symposium', 'Intl. Symp.')
+  .replace('International Colloquium', 'Intl. Colloq.')
+  .replace(/\bSymposium\b/, 'Symp.');
+const journalDetails = pub.volume !== undefined
+  ? `Volume ${pub.volume}${pub.issue !== undefined ? `, Issue ${pub.issue}` : ''}`
+  : undefined;
+---
+
+<article class="pub">
+  <div class="entry-heading pub-heading">
+    <h3>{pub.title}</h3>{pub.links && (
+      <span class="resource-links entry-resource">
+        {pub.links.map((link) => <ResourceLink href={link.url} label={link.label} ariaLabel={`${link.label} for ${pub.title}`} />)}
+      </span>
+    )}
+  </div>
+  <p class="pub-authors" set:html={authors(pub.authors)} />
+  <p class="pub-venue">
+    <span class="where">{venue}{journalDetails && `, ${journalDetails}`}{showYear && `, ${pub.year}`}</span>
+    {pub.short && <span aria-hidden="true">—</span>}
+    {pub.short && <span class="tag">{pub.short}</span>}
+  </p>
+  {pub.note && <p class="pub-note">{pub.note}</p>}
+</article>
