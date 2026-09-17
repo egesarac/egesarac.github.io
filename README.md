@@ -27,4 +27,4 @@ npm run preview   # review the production build
 
 Add the project to the `egesarac.github.io` repository, including hidden
 configuration files. Set GitHub Pages' source to **GitHub Actions** and push to
-`main`. `.github/workflows/deploy.yml` builds and publishes `dist/`.
+`master`. `.github/workflows/deploy.yml` builds and publishes `dist/`.
