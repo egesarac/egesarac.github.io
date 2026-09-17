@@ -10,5 +10,6 @@ dist/
 *.log
 .claude/
 
-# Local assistant instructions
+# Local documentation and assistant instructions
 /AGENTS.md
+/README.md
