@@ -14,9 +14,13 @@ bio:
     To this end, I develop theories and algorithms for formally specifying requirements and verifying systems against them.
 
   - >-
-    A central challenge motivating my work is to ensure that these systems align with *human values* such as privacy, fairness, and explainability.
-    I work toward a unified framework for efficiently measuring *how well* systems satisfy such requirements.
-    My MSCA Postdoctoral Fellowship project [QHyperSTAR](https://cordis.europa.eu/project/id/101276381) lays the foundations for this approach by advancing the theory of quantitative hyperproperties and developing memory-efficient runtime monitoring algorithms.
+    A central motivation for my work is ensuring that these systems align with *societal expectations* concerning privacy, fairness, and explainability.
+    This is hard because these expectations often require reasoning about how multiple executions of a system relate to one another.
+    Moreover, two systems may both meet these expectations and still differ greatly in quality.
+
+  - >-
+    I work toward a unified framework for efficiently measuring *how well* systems satisfy such relational requirements, known as hyperproperties.
+    In my MSCA Postdoctoral Fellowship project [QHyperSTAR](https://cordis.europa.eu/project/id/101276381), I am laying the foundations for this framework by advancing the theory of quantitative hyperproperties and developing memory-efficient algorithms for monitoring them at runtime.
 
 news:
   - date: Jun '26
