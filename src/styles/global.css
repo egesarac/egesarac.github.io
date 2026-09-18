@@ -163,14 +163,15 @@ a:focus-visible {
 }
 
 .site-head .wrap {
-  display: flex;
+  display: grid;
+  grid-template-areas: 'brand nav tools';
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
   align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  gap: 0.5rem 1.15rem;
 }
 
 .brand {
+  grid-area: brand;
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
@@ -191,6 +192,7 @@ a:focus-visible {
 }
 
 .site-nav {
+  grid-area: nav;
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1.15rem;
@@ -198,12 +200,23 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
-.site-nav a {
+.header-tools {
+  grid-area: tools;
+  display: flex;
+  align-items: baseline;
+  gap: 1.15rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.site-nav a,
+.header-tools a {
   color: var(--ink-soft);
   text-decoration: none;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.header-tools a:hover {
   color: var(--accent);
 }
 
@@ -212,6 +225,44 @@ a:focus-visible {
   text-decoration: underline;
   text-decoration-color: var(--link);
   text-underline-offset: 0.3em;
+}
+
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  color: var(--accent);
+}
+
+.nav-toggle::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded='true']::after {
+  margin-top: 3px;
+  transform: rotate(225deg);
+}
+
+.site-nav[hidden],
+.nav-toggle[hidden] {
+  display: none;
 }
 
 /* theme toggle — crescent in light mode, sun in dark; the pair
@@ -255,6 +306,58 @@ a:focus-visible {
 
   :root:not([data-theme='light']) .theme-toggle .icon-sun {
     display: block;
+  }
+}
+
+/* Give navigation its own row before the desktop masthead runs out of room. */
+@media (max-width: 44rem) {
+  .site-head .wrap {
+    grid-template-areas:
+      'brand tools'
+      'nav nav';
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 0.75rem;
+  }
+
+  .header-tools {
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .header-tools .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+}
+
+@media (max-width: 34rem) {
+  .site-head {
+    padding-block: 1rem;
+  }
+
+  .site-head[data-menu-collapsed] .wrap {
+    grid-template-areas: 'brand tools';
+  }
+
+  .header-tools {
+    gap: 0.65rem;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0.5rem;
+  }
+
+  .site-nav a {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    white-space: nowrap;
   }
 }
 
@@ -438,6 +541,26 @@ main {
   row-gap: var(--space-detail);
   font-size: var(--type-small);
   line-height: 1.5;
+}
+
+@media (max-width: 34rem) {
+  .meta-row {
+    row-gap: var(--space-detail);
+    font-size: var(--type-small);
+    line-height: 1.5;
+  }
+
+  .meta-row li {
+    white-space: nowrap;
+  }
+
+  .meta-row .meta-location {
+    flex-basis: 100%;
+  }
+
+  .meta-row .meta-location + .meta-link::before {
+    content: none;
+  }
 }
 
 /* ── prose ────────────────────────────────────────────────── */
@@ -656,46 +779,37 @@ main {
   margin-top: var(--space-detail);
 }
 
+/* Titles and resources share text flow so links follow the final title line. */
 .entry-heading {
   --title-resource-gap: 0.35rem;
   --resource-gap: 0;
 
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: var(--space-detail) var(--title-resource-gap);
+  display: block;
   margin-bottom: 0;
   font-size: var(--type-title);
   line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.entry-heading > h2,
+.entry-heading > h3 {
+  display: inline;
 }
 
 .entry-heading .entry-resource {
   display: inline-flex;
   align-items: baseline;
-  flex: none;
   flex-wrap: wrap;
   max-width: 100%;
+  margin-inline-start: var(--title-resource-gap);
   gap: var(--space-detail) var(--resource-gap);
   font-size: var(--type-mono);
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .entry-heading .entry-resource a {
   margin-right: 0;
-}
-
-.pub-heading {
-  display: block;
-  text-wrap: pretty;
-}
-
-.pub-heading > h3 {
-  display: inline;
-}
-
-.pub-heading .entry-resource {
-  margin-inline-start: var(--title-resource-gap);
-  white-space: nowrap;
 }
 
 .entry .where {
@@ -829,6 +943,7 @@ main {
 
 @media print {
   .site-nav,
+  .header-tools,
   .site-foot,
   .skip,
   .pronunciation {

@@ -22,13 +22,18 @@ const current = normalize(Astro.url.pathname);
       </svg>
       {site.name}
     </a>
-    <nav class="site-nav" aria-label="Site">
+    <nav id="site-navigation" class="site-nav" aria-label="Site">
       {items.map((item) => (
         <a href={item.href} aria-current={current === item.href ? 'page' : undefined}>
           {item.label}
         </a>
       ))}
       <a href={site.cv}>CV</a>
+    </nav>
+    <div class="header-tools">
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" hidden>
+        Menu
+      </button>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
         <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M20.6 13.4A8.4 8.4 0 1 1 10.6 3.4a6.8 6.8 0 0 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
@@ -40,7 +45,7 @@ const current = normalize(Astro.url.pathname);
           </g>
         </svg>
       </button>
-    </nav>
+    </div>
   </div>
 </header>
 
@@ -93,4 +98,55 @@ const current = normalize(Astro.url.pathname);
   });
 
   syncTheme();
+
+  const header = document.querySelector<HTMLElement>('.site-head');
+  const navigation = document.getElementById('site-navigation');
+  const menuToggle = document.getElementById('nav-toggle');
+  const headerTools = document.querySelector<HTMLElement>('.header-tools');
+  const mobileNavigation = window.matchMedia('(max-width: 34rem)');
+
+  if (header && navigation && menuToggle && headerTools) {
+    const setMenuOpen = (open: boolean) => {
+      navigation.hidden = !open;
+      menuToggle.setAttribute('aria-expanded', String(open));
+      header.toggleAttribute('data-menu-collapsed', !open);
+    };
+
+    const syncNavigation = () => {
+      const focused = document.activeElement;
+      const focusInNavigation = focused instanceof HTMLElement && navigation.contains(focused);
+
+      if (mobileNavigation.matches) {
+        // Keep keyboard order aligned with the masthead and expanded links.
+        headerTools.after(navigation);
+        menuToggle.hidden = false;
+        setMenuOpen(false);
+        if (focusInNavigation) menuToggle.focus();
+      } else {
+        headerTools.before(navigation);
+        navigation.hidden = false;
+        menuToggle.hidden = true;
+        menuToggle.setAttribute('aria-expanded', 'false');
+        header.removeAttribute('data-menu-collapsed');
+
+        if (focused === menuToggle) {
+          (navigation.querySelector<HTMLAnchorElement>('[aria-current="page"]') ??
+            navigation.querySelector<HTMLAnchorElement>('a'))?.focus();
+        } else if (focusInNavigation) {
+          // Moving the nav can otherwise drop focus from its current link.
+          focused.focus();
+        }
+      }
+    };
+
+    menuToggle.addEventListener('click', () => setMenuOpen(navigation.hidden));
+    header.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && mobileNavigation.matches && !navigation.hidden) {
+        setMenuOpen(false);
+        menuToggle.focus();
+      }
+    });
+    mobileNavigation.addEventListener('change', syncNavigation);
+    syncNavigation();
+  }
 </script>

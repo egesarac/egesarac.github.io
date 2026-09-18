@@ -3,8 +3,8 @@ import { site } from '../lib/data';
 ---
 
 <ul class="meta-row">
-  <li>{site.location}</li>
+  <li class="meta-location">{site.location}</li>
   {site.links.map((link) => (
-    <li><a href={link.url}>{link.label}</a></li>
+    <li class="meta-link"><a href={link.url}>{link.label}</a></li>
   ))}
 </ul>

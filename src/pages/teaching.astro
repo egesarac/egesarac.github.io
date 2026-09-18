@@ -12,8 +12,7 @@ const description = `Teaching experience — ${site.name}.`;
   {teaching.map((entry) => (
     <article class="entry">
       <div class="entry-heading">
-        <h2>{entry.course}</h2>
-        {entry.links && (
+        <h2>{entry.course}</h2>{entry.links && (
           <span class="resource-links entry-resource">
             {entry.links.map((link) => (
               <ResourceLink href={link.url} label={link.label} ariaLabel={`${entry.course} ${link.label === 'info' ? 'information' : link.label}`} />

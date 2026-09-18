@@ -12,8 +12,7 @@ const description = `Invited and conference talks by ${site.name}.`;
   {talks.map((talk) => (
     <article class="entry">
       <div class="entry-heading">
-        <h2>{talk.title}</h2>
-        {(talk.slides || talk.video) && (
+        <h2>{talk.title}</h2>{(talk.slides || talk.video) && (
           <span class="resource-links entry-resource">
             {talk.slides && <ResourceLink href={talk.slides} label="slides" ariaLabel={`Slides for ${talk.title}`} />}
             {talk.video && <ResourceLink href={talk.video} label="video" ariaLabel={`Video for ${talk.title}`} />}

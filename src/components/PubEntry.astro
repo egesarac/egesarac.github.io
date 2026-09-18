@@ -23,7 +23,7 @@ const journalDetails = pub.volume !== undefined
 ---
 
 <article class="pub">
-  <div class="entry-heading pub-heading">
+  <div class="entry-heading">
     <h3>{pub.title}</h3>{pub.links && (
       <span class="resource-links entry-resource">
         {pub.links.map((link) => <ResourceLink href={link.url} label={link.label} ariaLabel={`${link.label} for ${pub.title}`} />)}

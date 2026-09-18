@@ -24,8 +24,7 @@ const description = `Thesis opportunities, research supervision, and mentoring â
     {supervision.projects.map((entry) => (
       <article class="entry">
         <div class="entry-heading">
-          <h3>{entry.project}</h3>
-          {entry.links && (
+          <h3>{entry.project}</h3>{entry.links && (
             <span class="resource-links entry-resource">
               {entry.links.map((link) => (
                 <ResourceLink href={link.url} label={link.label} ariaLabel={`${link.label} for ${entry.project}`} />
