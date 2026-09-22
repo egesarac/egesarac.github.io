@@ -7,6 +7,8 @@
    dark-mode colors are lighter tints of the same palette.
    ──────────────────────────────────────────────────────────── */
 
+/* Alternative backgrounds, retained for reference:
+   light: #fcfaf7; dark: #171b21. */
 :root {
   --paper: #fdfdfd;
   --ink: #16181a;

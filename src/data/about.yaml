@@ -14,9 +14,9 @@ bio:
     To this end, I develop theories and algorithms for formally specifying requirements and verifying systems against them.
 
   - >-
-    A central motivation for my work is ensuring that these systems align with *societal expectations* concerning privacy, fairness, and explainability.
+    A central motivation for my work is ensuring that these systems align with *societal expectations* such as privacy, fairness, and explainability.
     This is hard because these expectations often require reasoning about how multiple executions of a system relate to one another.
-    Moreover, two systems may both meet these expectations and still differ greatly in quality.
+    Moreover, two systems may both satisfy the same requirements and still differ greatly in quality.
 
   - >-
     I work toward a unified framework for efficiently measuring *how well* systems satisfy such relational requirements, known as hyperproperties.
