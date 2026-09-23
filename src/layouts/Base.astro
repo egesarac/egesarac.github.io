@@ -34,8 +34,8 @@ const canonical = noindex ? undefined : new URL(Astro.url.pathname, Astro.site);
     {noindex && <meta name="robots" content="noindex" />}
     {canonical && <link rel="canonical" href={canonical} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfd" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#16181b" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfaf7" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171b21" />
     <script is:inline>
       // Apply the visitor's last choice before first paint. Without one, the
       // CSS media query follows the system theme automatically.
@@ -48,7 +48,7 @@ const canonical = noindex ? undefined : new URL(Astro.url.pathname, Astro.site);
         }
         if (theme !== 'light' && theme !== 'dark') return;
         document.documentElement.dataset.theme = theme;
-        const color = theme === 'dark' ? '#16181b' : '#fdfdfd';
+        const color = theme === 'dark' ? '#171b21' : '#fcfaf7';
         for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
           meta.setAttribute('content', color);
         }

@@ -7,10 +7,8 @@
    dark-mode colors are lighter tints of the same palette.
    ──────────────────────────────────────────────────────────── */
 
-/* Alternative backgrounds, retained for reference:
-   light: #fcfaf7; dark: #171b21. */
 :root {
-  --paper: #fdfdfd;
+  --paper: #fcfaf7;
   --ink: #16181a;
   --ink-soft: #4a4f55;
   --ink-faint: #6a6f75;
@@ -51,7 +49,7 @@
 }
 
 :root[data-theme='dark'] {
-  --paper: #16181b;
+  --paper: #171b21;
   --ink: #e6e9ec;
   --ink-soft: #abb0b6;
   --ink-faint: #838990;
@@ -65,7 +63,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: #16181b;
+    --paper: #171b21;
     --ink: #e6e9ec;
     --ink-soft: #abb0b6;
     --ink-faint: #838990;
