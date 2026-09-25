@@ -694,7 +694,8 @@ main {
   font-weight: 600;
 }
 
-.pub-authors .star {
+.pub-authors .star,
+.pub-authors .dagger {
   color: var(--accent);
   font-weight: 600;
 }
@@ -724,14 +725,19 @@ main {
   color: var(--ink-soft);
 }
 
-.pub-foot {
+.pub-authorship-note {
   margin: var(--space-entry) 0 0;
   font-size: var(--type-small);
   line-height: 1.5;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
 }
 
-.pub-foot .star {
+.pub-authorship-note p {
+  margin: 0;
+}
+
+.pub-authorship-note .star,
+.pub-authorship-note .dagger {
   color: var(--accent);
 }
 

@@ -9,6 +9,7 @@ const mainTopics = topicGroups.filter((group) => !group.additional);
 const additionalTopics = topicGroups.filter((group) => group.additional);
 const hasOverlappingTopics = publications.some((pub) => pub.topics.length > 1);
 const hasStar = publications.some((pub) => pub.authors.includes('*'));
+const hasDagger = publications.some((pub) => pub.author_order === 'contribution');
 const description = `Publications by ${site.name} on hyperproperties, quantitative verification, and runtime monitoring.`;
 ---
 
@@ -66,8 +67,11 @@ const description = `Publications by ${site.name} on hyperproperties, quantitati
     )}
   </div>
 
-  {hasStar && (
-    <p class="pub-foot"><span class="star">*</span> first or corresponding author</p>
+  {(hasStar || hasDagger) && (
+    <div class="pub-authorship-note">
+      {hasStar && <p><span class="star">*</span> Corresponding author.</p>}
+      {hasDagger && <p><span class="dagger">†</span> Authors ordered by contribution; otherwise alphabetically.</p>}
+    </div>
   )}
 </Base>
 

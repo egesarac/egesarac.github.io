@@ -22,7 +22,7 @@ function escapeRegExp(text: string): string {
 
 /**
  * Render an author list, emphasizing your own name and styling the
- * first/corresponding-author asterisk. The "and" before the last
+ * corresponding-author asterisk. The "and" before the last
  * author is dropped: names are separated by commas only.
  */
 export function authors(list: string): string {

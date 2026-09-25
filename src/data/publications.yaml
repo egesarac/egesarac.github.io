@@ -5,6 +5,7 @@
 # Fields:
 #   title    required
 #   authors  required — your own name is emphasized automatically
+#   author_order optional alphabetical (default) | contribution (marked †)
 #   venue    full venue name (or "PhD Thesis, …")
 #   short    optional acronym shown as a tag: CONCUR, CAV, LMCS, …
 #   year     required (number)
@@ -61,7 +62,7 @@
       url: https://github.com/ista-vamos/artifact-fm-qsfo
 
 - title: A Monitoring-Oriented Theory and Classification of Quantitative Specifications
-  authors: N. Ege Saraç*
+  authors: N. Ege Saraç
   venue: PhD Thesis, Institute of Science and Technology Austria (ISTA)
   year: 2025
   kind: thesis
@@ -223,7 +224,8 @@
       url: /files/lics21.pdf
 
 - title: Boosting Expensive Synchronizing Heuristics
-  authors: N. Ege Saraç*, Ömer Faruk Altun, Kamil Tolga Atam, Sertaç Karahoda, Kamer Kaya, and Hüsnü Yenigün
+  authors: N. Ege Saraç, Ömer Faruk Altun, Kamil Tolga Atam, Sertaç Karahoda, Kamer Kaya, and Hüsnü Yenigün
+  author_order: contribution
   venue: Expert Systems with Applications
   short: ESWA
   year: 2021

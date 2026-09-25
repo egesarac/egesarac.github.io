@@ -30,7 +30,11 @@ const journalDetails = pub.volume !== undefined
       </span>
     )}
   </div>
-  <p class="pub-authors" set:html={authors(pub.authors)} />
+  <p class="pub-authors">
+    <Fragment set:html={authors(pub.authors)} />{pub.author_order === 'contribution' && (
+      <>{' '}<span class="dagger" title="Authors ordered by contribution">†</span></>
+    )}
+  </p>
   <p class="pub-venue">
     <span class="where">{venue}{journalDetails && `, ${journalDetails}`}{showYear && `, ${pub.year}`}</span>
     {pub.short && <span aria-hidden="true">—</span>}

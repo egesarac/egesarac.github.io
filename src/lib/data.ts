@@ -35,6 +35,7 @@ export interface About {
 export interface Publication {
   title: string;
   authors: string;
+  author_order?: 'alphabetical' | 'contribution';
   venue: string;
   short?: string;
   year: number;
