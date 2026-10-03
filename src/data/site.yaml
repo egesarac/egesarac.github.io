@@ -4,6 +4,10 @@
 
 name: N. Ege Saraç
 
+# Google Analytics 4. Remove this field to disable Analytics and the cookie notice.
+# Tracking starts only on the production site, after the visitor accepts.
+analytics_id: G-SHPLPL5D2Q
+
 # Phonetic guide shown beside your name on the home page.
 pronunciation: eh-GEH sah-RAHTCH
 

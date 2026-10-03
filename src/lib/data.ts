@@ -17,6 +17,7 @@ export interface Link {
 
 export interface Site {
   name: string;
+  analytics_id?: string;
   pronunciation?: string;
   portrait?: string;
   role: string;

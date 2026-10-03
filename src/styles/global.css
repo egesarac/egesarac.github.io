@@ -859,6 +859,116 @@ main {
   color: var(--ink-faint);
 }
 
+/* ── analytics cookie notice ──────────────────────────────── */
+
+.cookie-settings {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--link);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cookie-settings:hover,
+.cookie-settings:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.cookie-notice {
+  position: fixed;
+  inset: auto auto 1.5rem 1.5rem;
+  z-index: 20;
+  width: min(25rem, calc(100% - 3rem));
+  max-height: calc(100dvh - 3rem);
+  overflow-y: auto;
+  padding: 1.25rem;
+  border: 1px solid var(--control-border);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--ink-soft);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.cookie-notice p {
+  margin: 0 0 1rem;
+}
+
+.cookie-notice a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.cookie-notice-toggle {
+  position: fixed;
+  inset: auto auto 1.5rem 1.5rem;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--control-border);
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink-soft);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+  cursor: pointer;
+}
+
+.cookie-notice-toggle[hidden] {
+  display: none;
+}
+
+.cookie-notice-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cookie-info-icon {
+  fill: var(--paper);
+}
+
+.cookie-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.625rem;
+}
+
+.cookie-actions button {
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--control-border);
+  border-radius: 3px;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.cookie-actions button:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 34rem) {
+  .cookie-notice-toggle {
+    inset: auto auto 0.75rem 0.75rem;
+  }
+
+  .cookie-notice {
+    inset: auto 0.75rem 0.75rem;
+    width: auto;
+    max-height: calc(100dvh - 1.5rem);
+    padding: 1rem;
+  }
+}
+
 /* ── 404 ──────────────────────────────────────────────────── */
 
 .lost {
@@ -952,7 +1062,9 @@ main {
   .header-tools,
   .site-foot,
   .skip,
-  .pronunciation {
+  .pronunciation,
+  .cookie-notice,
+  .cookie-notice-toggle {
     display: none;
   }
 

@@ -11,6 +11,16 @@ const updated = edited.toLocaleDateString('en-GB', { day: 'numeric', month: 'lon
 <footer class="site-foot">
   <div class="wrap">
     <ContactRow />
-    <p class="colophon">© {year} {site.name} · Last update: {updated}</p>
+    <p class="colophon">
+      © {year} {site.name} · Last update: {updated}
+      {site.analytics_id && (
+        <Fragment>
+          {' · '}
+          <button id="cookie-settings" class="cookie-settings" type="button" aria-controls="cookie-notice" aria-expanded="false" hidden>
+            Cookie settings
+          </button>
+        </Fragment>
+      )}
+    </p>
   </div>
 </footer>

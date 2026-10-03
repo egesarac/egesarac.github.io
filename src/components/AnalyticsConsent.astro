@@ -1,0 +1,220 @@
+---
+interface Props {
+  measurementId: string;
+}
+
+const { measurementId } = Astro.props;
+---
+
+<aside
+  id="cookie-notice"
+  class="cookie-notice"
+  aria-label="Analytics cookies"
+  data-measurement-id={measurementId}
+  data-site-origin={Astro.site?.origin}
+  hidden
+>
+  <p>
+    This site uses Google Analytics cookies to understand how visitors use it.
+    If you accept, information about your visit is shared with Google.
+    <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+  </p>
+  <div class="cookie-actions">
+    <button type="button" data-consent="denied">Reject</button>
+    <button type="button" data-consent="granted">Accept</button>
+  </div>
+</aside>
+
+<button
+  id="cookie-notice-toggle"
+  class="cookie-notice-toggle"
+  type="button"
+  aria-label="Show cookie information"
+  aria-controls="cookie-notice"
+  aria-expanded="false"
+  hidden
+>
+  <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M20.4 5.4a5 5 0 0 0 6.2 6.2A11 11 0 1 1 20.4 5.4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"></path>
+    <g fill="currentColor">
+      <circle cx="10" cy="11" r="1.2"></circle>
+      <circle cx="17" cy="15" r="1.2"></circle>
+      <circle cx="9" cy="20" r="1.2"></circle>
+      <circle cx="18" cy="23" r="1.2"></circle>
+    </g>
+    <circle class="cookie-info-icon" cx="25" cy="25" r="6" stroke="currentColor" stroke-width="1.5"></circle>
+    <path d="M25 24.5v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+    <circle cx="25" cy="22" r="0.8" fill="currentColor"></circle>
+  </svg>
+</button>
+
+<script>
+  type Consent = 'granted' | 'denied';
+  const STORAGE_KEY = 'analytics-consent-v1';
+  const DENIED = {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+  };
+
+  const notice = document.getElementById('cookie-notice');
+  const settings = document.getElementById('cookie-settings');
+  const toggle = document.getElementById('cookie-notice-toggle');
+
+  if (notice instanceof HTMLElement && settings instanceof HTMLButtonElement && toggle instanceof HTMLButtonElement) {
+    const measurementId = notice.dataset.measurementId!;
+    // The notice can be reviewed locally without sending test visits to Analytics.
+    const production = window.location.origin === notice.dataset.siteOrigin;
+    const analyticsWindow = window as typeof window & {
+      dataLayer?: unknown[];
+      gtag?: (...args: unknown[]) => void;
+      [key: `ga-disable-${string}`]: boolean;
+    };
+    let initialized = false;
+    let returnFocus: HTMLElement | null = null;
+    let noticeRequested = false;
+    let minimizedAtTop = false;
+    let manuallyOpened = false;
+
+    const readConsent = (): Consent | null => {
+      try {
+        const value = localStorage.getItem(STORAGE_KEY);
+        return value === 'granted' || value === 'denied' ? value : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const clearAnalyticsCookies = () => {
+      // Remove cookies left by both this tag and the previous site.
+      const domains = window.location.hostname.split('.');
+      for (const cookie of document.cookie.split(';')) {
+        const name = cookie.trim().split('=')[0];
+        if (name !== '_ga' && !name.startsWith('_ga_')) continue;
+        const expired = `${name}=; Max-Age=0; Path=/`;
+        document.cookie = expired;
+        for (let i = 0; i < domains.length - 1; i++) {
+          document.cookie = `${expired}; Domain=${domains.slice(i).join('.')}`;
+        }
+      }
+    };
+
+    const applyConsent = (consent: Consent | null) => {
+      const accepted = consent === 'granted' && production;
+      analyticsWindow[`ga-disable-${measurementId}`] = !accepted;
+
+      if (!accepted) {
+        if (initialized) analyticsWindow.gtag?.('consent', 'update', DENIED);
+        if (production) clearAnalyticsCookies();
+        return;
+      }
+
+      if (initialized) {
+        analyticsWindow.gtag?.('consent', 'update', { ...DENIED, analytics_storage: 'granted' });
+        return;
+      }
+
+      initialized = true;
+      const dataLayer = analyticsWindow.dataLayer ??= [];
+      analyticsWindow.gtag = function (..._args: unknown[]) { dataLayer.push(arguments); };
+      analyticsWindow.gtag('consent', 'default', DENIED);
+      analyticsWindow.gtag('consent', 'update', { ...DENIED, analytics_storage: 'granted' });
+      analyticsWindow.gtag('js', new Date());
+      analyticsWindow.gtag('config', measurementId, {
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false,
+      });
+
+      // Basic consent mode: do not contact Google until consent is granted.
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(measurementId)}`;
+      document.head.append(script);
+    };
+
+    const syncNotice = () => {
+      const atTop = window.scrollY <= 0;
+      // Opening settings overrides the scroll behavior until the visitor returns to the top.
+      if (atTop) manuallyOpened = false;
+      const expanded = noticeRequested && (manuallyOpened || (atTop && !minimizedAtTop));
+      const focused = document.activeElement;
+      notice.hidden = !expanded;
+      toggle.hidden = !noticeRequested || expanded;
+      settings.setAttribute('aria-expanded', String(expanded));
+      toggle.setAttribute('aria-expanded', String(expanded));
+
+      // Keep keyboard focus on the visible control as the notice changes shape.
+      if (!expanded && !toggle.hidden && focused && notice.contains(focused)) {
+        toggle.focus({ preventScroll: true });
+      } else if (expanded && focused === toggle) {
+        notice.querySelector<HTMLButtonElement>('[data-consent]')?.focus({ preventScroll: true });
+      }
+    };
+
+    const showNotice = (show: boolean) => {
+      noticeRequested = show;
+      minimizedAtTop = false;
+      if (!show) manuallyOpened = false;
+      syncNotice();
+    };
+
+    const openNotice = (trigger: HTMLElement) => {
+      returnFocus = trigger;
+      manuallyOpened = true;
+      showNotice(true);
+      notice.querySelector<HTMLButtonElement>('[data-consent]')?.focus({ preventScroll: true });
+    };
+
+    settings.hidden = false;
+    const consent = readConsent();
+    applyConsent(consent);
+    showNotice(consent === null);
+
+    settings.addEventListener('click', () => openNotice(settings));
+    toggle.addEventListener('click', () => openNotice(toggle));
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) minimizedAtTop = false;
+      syncNotice();
+    }, { passive: true });
+    window.addEventListener('pageshow', syncNotice);
+
+    for (const button of notice.querySelectorAll<HTMLButtonElement>('[data-consent]')) {
+      button.addEventListener('click', () => {
+        const consent = button.dataset.consent as Consent;
+        try {
+          localStorage.setItem(STORAGE_KEY, consent);
+        } catch {
+          // The choice still applies to this page when storage is unavailable.
+        }
+        applyConsent(consent);
+        showNotice(false);
+        (returnFocus && !returnFocus.hidden ? returnFocus : settings).focus({ preventScroll: true });
+        returnFocus = null;
+      });
+    }
+
+    notice.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && returnFocus) {
+        manuallyOpened = false;
+        if (readConsent() === null) {
+          minimizedAtTop = true;
+          syncNotice();
+          toggle.focus({ preventScroll: true });
+        } else {
+          showNotice(false);
+          returnFocus.focus({ preventScroll: true });
+        }
+        returnFocus = null;
+      }
+    });
+
+    // Keep open tabs in sync when a visitor changes their choice elsewhere.
+    window.addEventListener('storage', (event) => {
+      if (event.key !== STORAGE_KEY && event.key !== null) return;
+      const consent = readConsent();
+      applyConsent(consent);
+      showNotice(consent === null);
+    });
+  }
+</script>
