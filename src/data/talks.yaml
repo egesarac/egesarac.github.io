@@ -31,6 +31,12 @@
       url: https://conferences.au.dk/confest2025/concur
       when: Aug '25
 
+- title: A Monitoring-Oriented Theory and Classification of Quantitative Specifications
+  slides: /files/phdSlides_egesarac.pdf
+  given:
+    - at: PhD Defense, Institute of Science and Technology Austria (ISTA)
+      when: Jun '25
+
 - title: Approximate Distributed Monitoring under Partial Synchrony
   slides: /files/slides/admups.pdf
   given:
