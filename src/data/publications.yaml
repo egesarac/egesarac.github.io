@@ -15,8 +15,27 @@
 #   issue    optional journal issue (number); requires volume
 #   note     optional — "invited paper", "invited to LMCS special issue", …
 #   links    optional list of { label, url }; pdf, code, doi, slides, …
-#   selected optional { order, summary } — homepage position and contribution sentence
+#   selected optional { topic, order, summary } — homepage group, position, and contribution sentence
 # ─────────────────────────────────────────────────────────────
+
+- title: "TriCycle: Proving Temporal Hyperproperties, Coinductively"
+  authors: Arthur Correnson, N. Ege Saraç, Mishel Carelli, and Bernd Finkbeiner
+  author_order: contribution
+  venue: Symposium on Principles of Programming Languages
+  short: POPL
+  year: 2027
+  kind: conference
+  topics: [hyperproperties]
+  selected:
+    topic: hyperproperties
+    order: 1
+    summary: >-
+      We develop a coinductive proof system for temporal hyperproperties, enabling machine-checked proofs about relationships between infinite executions.
+  # links:
+  #   - label: pdf
+  #     url:
+  #   - label: code
+  #     url:
 
 - title: Monitoring Discounted Sum Properties
   authors: Filip Cano, Thomas A. Henzinger, Konstantin Kueffner, and N. Ege Saraç
@@ -39,7 +58,8 @@
   kind: conference
   topics: [quantitative-verification, model-checking]
   selected:
-    order: 1
+    topic: quantitative-verification
+    order: 3
     summary: >-
       We enable our tool Quantitative Automata Kit (QuAK) to automatically analyze performance measures whose values can grow arbitrarily large, such as response times.
   links:
@@ -83,6 +103,7 @@
   topics: [hyperproperties, quantitative-verification, model-checking]
   note: Invited to LMCS special issue
   selected:
+    topic: hyperproperties
     order: 2
     summary: >-
       We introduce the first dedicated specification language for quantitative hyperproperties, which assign values to sets or probability distributions of infinite executions.
@@ -100,7 +121,8 @@
   volume: 21
   issue: 2
   selected:
-    order: 3
+    topic: quantitative-verification
+    order: 4
     summary: >-
       We generalize the safety-liveness classification to quantitative properties and give decision procedures and decomposition algorithms for quantitative automata.
   links:
@@ -143,7 +165,8 @@
   topics: [runtime-monitoring]
   note: Invited to STTT special issue
   selected:
-    order: 5
+    topic: runtime-monitoring
+    order: 6
     summary: >-
       We accelerate the monitoring of distributed systems with bounded clock skew using sound approximations that achieve speedups of up to five orders of magnitude.
   links:
@@ -216,7 +239,8 @@
   kind: conference
   topics: [quantitative-verification, runtime-monitoring]
   selected:
-    order: 4
+    topic: runtime-monitoring
+    order: 5
     summary: >-
       We develop a theory of quantitative runtime monitoring that formalizes how monitors estimate property values from finite observations.
   links:

@@ -23,6 +23,11 @@ bio:
     In my MSCA Postdoctoral Fellowship project [QHyperSTAR](https://cordis.europa.eu/project/id/101276381), I am laying the foundations for this framework by advancing the theory of quantitative hyperproperties and developing memory-efficient algorithms for monitoring them at runtime.
 
 news:
+  - date: Oct '26
+    text: >-
+      Our paper *TriCycle: Proving Temporal Hyperproperties, Coinductively* is accepted for
+      publication at POPL 2027.
+
   - date: Jun '26
     text: >-
       Our paper *Monitoring Discounted Sum Properties* is accepted for
@@ -44,7 +49,87 @@ news:
       Our paper *Quantitative Monitoring of Signal First-Order Logic* is
       accepted for publication at FM 2026.
 
-  - date: Oct '25
-    text: >-
-      I joined the Reactive Systems Group at CISPA Helmholtz Center for
-      Information Security as a postdoctoral researcher.
+  # - date: Oct '25
+  #   text: >-
+  #     I joined the Reactive Systems Group at CISPA Helmholtz Center for
+  #     Information Security as a postdoctoral researcher.
+
+  # - date: May '25
+  #   text: >-
+  #     Our paper *Quantitative Language Automata* is accepted for publication
+  #     at CONCUR 2025.
+
+  # - date: Apr '25
+  #   text: >-
+  #     Our paper *Safety and Liveness of Quantitative Properties and Automata*
+  #     is published in LMCS Vol. 21, Iss. 2.
+
+  # - date: Dec '24
+  #   text: >-
+  #     Our tool demonstration paper *Automating the Analysis of Quantitative
+  #     Automata with QuAK* is accepted for publication at TACAS 2025.
+
+  # - date: Sep '24
+  #   text: >-
+  #     Our paper *QuAK: Quantitative Automata Kit* will appear in ISoLA 2024
+  #     as an invited paper.
+
+  # - date: Sep '24
+  #   text: >-
+  #     I am attending AVM 2024 to present our work on the safety and liveness
+  #     of quantitative properties and automata. Come say hi!
+
+  # - date: Jun '24
+  #   text: >-
+  #     Our paper *Approximate Distributed Monitoring under Partial Synchrony:
+  #     Balancing Speed and Accuracy* is accepted for publication at RV 2024.
+
+  # - date: Jun '24
+  #   text: >-
+  #     I am visiting the [DEVINE team](https://devine.inria.fr/) to talk about
+  #     our work on the safety and liveness of quantitative properties and
+  #     automata. Many thanks to [Ocan Sankur](https://people.irisa.fr/Ocan.Sankur/)
+  #     for the invitation!
+
+  # - date: Jun '24
+  #   text: >-
+  #     Our paper *Strategic Dominance: A New Preorder for Nondeterministic
+  #     Processes* is accepted for publication at CONCUR 2024.
+
+  # - date: Jul '23
+  #   text: >-
+  #     I will spend the next three months at the
+  #     [Austrian Institute of Technology (AIT)](https://www.ait.ac.at/en/)
+  #     as an intern, working on distributed monitoring under
+  #     [Dejan Ničković](https://sites.google.com/view/nickovic).
+  #     Looking forward to it!
+
+  # - date: Jun '23
+  #   text: >-
+  #     Our paper *Safety and Liveness of Quantitative Automata* is accepted
+  #     for publication at CONCUR 2023.
+
+  # - date: Apr '23
+  #   text: >-
+  #     Our paper *Regular Methods for Operator Precedence Languages* is
+  #     accepted for publication at ICALP 2023.
+
+  # - date: Mar '23
+  #   text: >-
+  #     I will be attending ETAPS 2023 to present our work at FoSSaCS.
+  #     Come say hi!
+
+  # - date: Dec '22
+  #   text: >-
+  #     Our paper *Quantitative Safety and Liveness* is accepted for publication
+  #     at FoSSaCS 2023.
+
+  # - date: Jul '22
+  #   text: >-
+  #     I am looking for an internship opportunity for Summer 2023. If you'd
+  #     like to get in touch, please don't hesitate to email me!
+
+  # - date: Jun '22
+  #   text: >-
+  #     Our paper *Abstract Monitors for Quantitative Specifications* is
+  #     accepted for publication at RV 2022.

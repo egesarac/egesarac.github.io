@@ -14,14 +14,14 @@ areas:
     contribution: >-
       I characterize the topological structure of hyperproperties, design languages to specify them, and develop methods to verify them.
 
-  - title: Quantitative verification
+  - title: Quantitative Verification
     image: /images/research/quantitative-verification.webp
     definition: >-
       Quantitative properties assign numerical values to system executions, enabling reasoning about robustness, performance, and the severity of violations.
     contribution: >-
       I establish classifications and hierarchies of quantitative properties and develop automata-theoretic algorithms and software for their analysis and verification.
 
-  - title: Runtime monitoring
+  - title: Runtime Monitoring
     image: /images/research/runtime-monitoring.webp
     definition: >-
       Runtime monitoring observes system behavior during execution and assesses its correctness and performance against formal specifications.

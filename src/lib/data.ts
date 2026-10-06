@@ -47,6 +47,7 @@ export interface Publication {
   note?: string;
   links?: Link[];
   selected?: {
+    topic: string;
     order: number;
     summary: string;
   };
@@ -149,11 +150,18 @@ supervision.projects.forEach((project, i) => {
 });
 supervision.mentoring.forEach((entry, i) => validateMarkdown(entry.detail, `supervision.yaml.mentoring[${i}].detail`));
 
-/** Homepage selections use an editorial order independent of the full bibliography. */
-export function selectedPublications() {
-  return publications
+/** Homepage selections appear once in their chosen topic, in editorial order. */
+export function selectedPublicationsByTopic() {
+  const selected = publications
     .flatMap((pub) => pub.selected ? [{ pub, ...pub.selected }] : [])
     .sort((a, b) => a.order - b.order);
+
+  return publicationTopics
+    .map((topic) => ({
+      ...topic,
+      entries: selected.filter((entry) => entry.topic === topic.id),
+    }))
+    .filter((topic) => topic.entries.length > 0);
 }
 
 /** Publications grouped by year, newest year first, original order kept inside a year. */

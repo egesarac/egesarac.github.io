@@ -16,8 +16,7 @@ portrait: /images/portrait.jpg
 
 # Shown under your name on the home page.
 role: >-
-  Postdoctoral Researcher @ [CISPA](https://cispa.de/en)
-  and [TUM](https://www.tum.de/en/)
+  Marie Skłodowska-Curie Postdoctoral Fellow @ [CISPA](https://cispa.de/en) and [TUM](https://www.tum.de/en/)
 
 location: Munich, Germany
 
@@ -40,6 +39,4 @@ cv: /files/cv_egesarac.pdf
 
 # One-line description used for search engines and link previews.
 description: >-
-  N. Ege Saraç is a postdoctoral researcher in formal methods and runtime
-  verification at the CISPA Helmholtz Center for Information Security in
-  Munich.
+  N. Ege Saraç is a researcher in formal methods at the CISPA Helmholtz Center for Information Security.

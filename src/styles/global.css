@@ -995,6 +995,19 @@ main {
    Title, venue, and resources share a wrapping header. The venue uses the
    archive's tag style; authors and contribution stay on the next two rows. */
 
+.selected-pub-topic + .selected-pub-topic {
+  margin-top: var(--space-group);
+}
+
+.selected-pub-topic-title {
+  margin: 0 0 var(--space-paragraph);
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: var(--type-small);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
 .selected-pub-list {
   display: grid;
   gap: var(--space-entry);
@@ -1009,7 +1022,7 @@ main {
   text-wrap: pretty;
 }
 
-.selected-pub h3 {
+.selected-pub h4 {
   display: inline;
   margin: 0;
   font-family: var(--sans);

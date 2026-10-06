@@ -87,6 +87,7 @@ export function validatePublications(publications: Publication[], topics: Public
       throw new Error(`${entry}.issue: an issue requires a volume.`);
     }
     if (pub.selected !== undefined) {
+      requireText(pub.selected?.topic, `${entry}.selected.topic`);
       requirePositiveInteger(pub.selected?.order, `${entry}.selected.order`);
       requireText(pub.selected?.summary, `${entry}.selected.summary`);
       if (selectedOrders.has(pub.selected.order)) {
@@ -108,6 +109,9 @@ export function validatePublications(publications: Publication[], topics: Public
         throw new Error(`${entry}.topics: duplicate topic "${topicId}".`);
       }
       assignedTopics.add(topicId);
+    }
+    if (pub.selected !== undefined && !assignedTopics.has(pub.selected.topic)) {
+      throw new Error(`${entry}.selected.topic: must be one of this publication's topics.`);
     }
   });
 }
