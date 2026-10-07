@@ -80,6 +80,13 @@ export function validatePublications(publications: Publication[], topics: Public
   publications.forEach((pub, index) => {
     const entry = `publications.yaml[${index}] (${pub?.title ?? 'untitled'})`;
     requirePositiveInteger(pub?.year, `${entry}.year`);
+    if (pub.corresponding !== undefined && typeof pub.corresponding !== 'boolean') {
+      throw new Error(`${entry}.corresponding: expected true or false.`);
+    }
+    if (pub.author_order !== undefined &&
+        pub.author_order !== 'alphabetical' && pub.author_order !== 'contribution') {
+      throw new Error(`${entry}.author_order: expected alphabetical or contribution.`);
+    }
     for (const field of ['volume', 'issue'] as const) {
       if (pub[field] !== undefined) requirePositiveInteger(pub[field], `${entry}.${field}`);
     }

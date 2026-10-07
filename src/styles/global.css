@@ -700,6 +700,20 @@ main {
   font-weight: 600;
 }
 
+.pub-authors sup.star,
+.pub-authors sup.dagger,
+.pub-authorship-note sup.star,
+.pub-authorship-note sup.dagger {
+  line-height: 0;
+}
+
+/* The font already raises the asterisk; avoid raising and shrinking it again. */
+.pub-authors sup.star,
+.pub-authorship-note sup.star {
+  font-size: 1em;
+  vertical-align: baseline;
+}
+
 .pub-venue {
   font-size: var(--type-copy);
   line-height: 1.5;

@@ -11,7 +11,6 @@ interface Props {
 const { pub, summary } = Astro.props;
 const { volume, issue } = pub;
 // The full bibliography explains author-role markers; the homepage uses a compact citation.
-const authorList = pub.authors.replaceAll('*', '');
 ---
 
 <article class="selected-pub">
@@ -34,6 +33,6 @@ const authorList = pub.authors.replaceAll('*', '');
       </>
     )}
   </div>
-  <p class="pub-authors" set:html={authors(authorList)} />
+  <p class="pub-authors" set:html={authors(pub.authors)} />
   <p class="selected-pub-summary">{summary}</p>
 </article>

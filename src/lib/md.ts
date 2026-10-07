@@ -1,5 +1,5 @@
 import { marked } from 'marked';
-import { site } from './data';
+import { site, type Publication } from './data';
 
 /**
  * Render a YAML string with inline markdown: *italics*, **bold**,
@@ -21,17 +21,22 @@ function escapeRegExp(text: string): string {
 }
 
 /**
- * Render an author list, emphasizing your own name and styling the
- * corresponding-author asterisk. The "and" before the last
- * author is dropped: names are separated by commas only.
+ * Render an author list, emphasizing your own name. Publication metadata adds
+ * corresponding-author and contribution-order superscripts; omit it for compact
+ * homepage citations. The "and" before the last author is dropped.
  */
-export function authors(list: string): string {
+export function authors(list: string, publication?: Pick<Publication, 'corresponding' | 'author_order'>): string {
   const me = site.highlight_author;
   const escaped = escapeHtml(list.replace(/,?\s+and\s+/g, ', '));
-  const pattern = new RegExp(`${escapeRegExp(me)}(\\*?)`, 'g');
-  return escaped.replace(
-    pattern,
-    (_match, star: string) =>
-      `<span class="me">${me}</span>` + (star ? '<span class="star">*</span>' : ''),
-  );
+  const pattern = new RegExp(escapeRegExp(me), 'g');
+  let markers = '';
+  if (publication) {
+    if (publication.corresponding ?? true) {
+      markers += '<sup class="star" title="Corresponding author">*</sup>';
+    }
+    if (publication.author_order === 'contribution') {
+      markers += '<sup class="dagger" title="Authors ordered by contribution">†</sup>';
+    }
+  }
+  return escaped.replace(pattern, () => `<span class="me">${me}</span>${markers}`);
 }
