@@ -12,14 +12,14 @@ areas:
     definition: >-
       Hyperproperties specify correct system implementations by describing how different executions relate, capturing information-flow properties, algorithmic fairness, counterfactual causality, and more.
     contribution: >-
-      I characterize the topological structure of hyperproperties, design languages to specify them, and develop methods to verify them.
+      I investigate how the structure of hyperproperties shapes their verification and use this understanding to develop specification languages and verification techniques.
 
   - title: Quantitative Verification
     image: /images/research/quantitative-verification.webp
     definition: >-
       Quantitative properties assign numerical values to system executions, enabling reasoning about robustness, performance, and the severity of violations.
     contribution: >-
-      I establish classifications and hierarchies of quantitative properties and develop automata-theoretic algorithms and software for their analysis and verification.
+      I investigate when and at what cost quantitative requirements can be verified automatically and develop algorithms and software for their analysis and verification.
 
   - title: Runtime Monitoring
     image: /images/research/runtime-monitoring.webp
