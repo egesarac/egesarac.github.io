@@ -19,7 +19,7 @@ areas:
     definition: >-
       Quantitative properties assign numerical values to system executions, enabling reasoning about robustness, performance, and the severity of violations.
     contribution: >-
-      I investigate when and at what cost quantitative requirements can be verified automatically and develop algorithms and software for their analysis and verification.
+      I study when and at what cost quantitative requirements can be verified automatically and develop algorithms and software for their analysis and verification.
 
   - title: Runtime Monitoring
     image: /images/research/runtime-monitoring.webp
