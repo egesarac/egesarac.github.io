@@ -9,6 +9,8 @@
   links:
     - label: info
       url: 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950974984'
+    - label: materials
+      url: https://finkbeiner.groups.cispa.de/courses/2026/hitchhikers-guide-to-hyperproperties/
 
 - course: Functional Programming and Verification
   role: Head teaching assistant
