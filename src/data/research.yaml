@@ -12,7 +12,7 @@ areas:
     definition: >-
       Hyperproperties specify correct system implementations by describing how different executions relate, capturing information-flow properties, algorithmic fairness, counterfactual causality, and more.
     contribution: >-
-      I investigate how the structure of hyperproperties shapes their verification and use this understanding to develop specification languages and verification techniques.
+      I investigate how the structure of hyperproperties affects their verification and use this understanding to develop specification languages and verification techniques.
 
   - title: Quantitative Verification
     image: /images/research/quantitative-verification.webp
