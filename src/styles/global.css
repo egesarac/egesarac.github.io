@@ -875,6 +875,7 @@ main {
 
 /* ── analytics cookie notice ──────────────────────────────── */
 
+/* Disabled along with Google Analytics and cookie consent.
 .cookie-settings {
   padding: 0;
   border: 0;
@@ -983,6 +984,8 @@ main {
   }
 }
 
+*/
+
 /* ── 404 ──────────────────────────────────────────────────── */
 
 .lost {
@@ -1089,11 +1092,16 @@ main {
   .header-tools,
   .site-foot,
   .skip,
-  .pronunciation,
+  .pronunciation {
+    display: none;
+  }
+
+  /*
   .cookie-notice,
   .cookie-notice-toggle {
     display: none;
   }
+  */
 
   body {
     background: #fff;

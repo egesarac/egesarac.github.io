@@ -33,7 +33,7 @@ const description = `Thesis opportunities, research supervision, and mentoring �
           )}
         </div>
         <p class="where">
-          {entry.student} · {entry.type} · {entry.role} at <em>{entry.where}</em>
+          {entry.student} · {entry.type} · <em>{entry.where}</em>
           <span class="when">· {entry.when}</span>
         </p>
         {entry.detail && <p class="detail" set:html={md(entry.detail)} />}

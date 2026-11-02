@@ -17,7 +17,7 @@ export interface Link {
 
 export interface Site {
   name: string;
-  analytics_id?: string;
+  // analytics_id?: string;
   pronunciation?: string;
   portrait?: string;
   role: string;
@@ -81,7 +81,6 @@ export interface Supervision {
     project: string;
     student: string;
     type: string;
-    role: string;
     where: string;
     when: string;
     detail?: string;
