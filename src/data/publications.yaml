@@ -39,6 +39,19 @@
   #   - label: code
   #     url:
 
+- title: "Approximate Distributed Monitoring under Partial Synchrony: Balancing Speed & Accuracy"
+  authors: Borzoo Bonakdarpour, Anik Momtaz, Dejan Ničković, and N. Ege Saraç
+  venue: International Journal on Software Tools for Technology Transfer
+  short: STTT
+  year: 2026
+  kind: journal
+  topics: [runtime-monitoring]
+  links:
+    - label: pdf
+      url: /files/sttt26.pdf
+    - label: code
+      url: https://github.com/egesarac/ApxDistMon
+
 - title: Monitoring Discounted Sum Properties
   authors: Filip Cano, Thomas A. Henzinger, Konstantin Kueffner, and N. Ege Saraç
   corresponding: false
