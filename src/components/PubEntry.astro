@@ -10,10 +10,10 @@ interface Props {
 
 const { pub, showYear = false } = Astro.props;
 
-// Venues are stored under their full names; the boilerplate is
-// abbreviated only at display time.
+// Venues are stored under their full names and shortened only for display.
 const venue = pub.venue
   .replace('International Conference', 'Intl. Conf.')
+  .replace(/^International Journal on /, '')
   .replace('International Symposium', 'Intl. Symp.')
   .replace('International Colloquium', 'Intl. Colloq.')
   .replace(/\bSymposium\b/, 'Symp.');
